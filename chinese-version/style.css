@@ -152,7 +152,7 @@ body {
 	width: 400px;
 }
 
-.deadline {
+.deadline, .img-logo-competition {
 	width: 350px;
 	margin: auto;
 	text-align: center;
@@ -178,6 +178,12 @@ body {
 ul{
 	padding: 0;
 	list-style-type: none;
+}
+.img-logo-competition{
+	width: 350px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
 }
 
 @media (max-width: 993px) {
