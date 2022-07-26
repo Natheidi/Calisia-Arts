@@ -214,6 +214,9 @@ ul{
     color: #fff;
     text-decoration: none;
 }
+.mobile-only{
+    display: none;
+}
 @media (max-width: 1250px){
     .flex-about-row{
         flex-wrap: wrap;
@@ -223,6 +226,12 @@ ul{
     }
     .about-right{
         width: 100%;
+    }
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: block;
     }
 }
 
