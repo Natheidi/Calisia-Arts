@@ -559,6 +559,9 @@ ul {
     .team-h {
         width: 80%;
     }
+    .container-photo{
+        width: 50%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -568,6 +571,9 @@ ul {
 
     .team-h {
         width: 95%;
+    }
+    .container-photo{
+        width: 80%;
     }
 }
 
@@ -593,6 +599,9 @@ ul {
         justify-content: space-around;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    .container-photo{
+        width: 93%;
     }
 }
 
