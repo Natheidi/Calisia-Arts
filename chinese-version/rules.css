@@ -355,12 +355,63 @@ ul{
 .fa-arrow-down {
     color: #a48044;
 }
-.border-competition{
+.border-competition {
     border-bottom: #a48044 2px dotted;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-.text-competition{
+
+.text-competition {
     opacity: 50%;
+    margin-top: 30px;
 }
+
+.img-kalisz-1 {
+    border: #a48044 4px solid;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.img-kalisz-2 {
+    margin-top: 30px;
+}
+
+.image-about-1 {
+    width: 100%;
+}
+.image-about-2 {
+    width: 100%;
+}
+.image-about-3 {
+    width: 45%;
+}
+.image-about-4 {
+    width: 45%;
+}
+
+.container-photo{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-photo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.label-photo{
+    color: #FFF;
+    opacity: 60%;
+    font-size: 14px;
+    background-color: #a48044;
+    padding: 10px;
+    text-align: center;
+}
+
 @media (max-width: 993px) {
     .navbar-nav{
     display: none;
