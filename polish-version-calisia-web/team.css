@@ -78,12 +78,14 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
 .socialFooter .fa {
     color: hsla(0, 0%, 100%, .8);
     font-size: 20px;
     margin: 20px 0 20px 10px;
     transition: all 0.5s ease-in-out;
 }
+
 .fa:hover{
     color:#a48044;
 }
@@ -91,6 +93,7 @@ body {
 .fa:visited{
     color:#fff;
 }
+
 .footer-s-1 {
     font-size: 15px;
     color: hsla(0, 0%, 100%, .8);
@@ -162,6 +165,11 @@ body {
     font-size: 16px;
     line-height: 40px;
 }
+
+.pfooter{
+    margin: 0;
+}
+
 .team-img{
     width: 50%;
 }
