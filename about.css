@@ -110,8 +110,8 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.fa {
-    opacity: 0%;
+.fa:hover{
+    color:#a48044;
 }
 
 .footer-s-1 {
