@@ -114,6 +114,11 @@ body {
     color:#a48044;
 }
 
+.fa:visited{
+    color:#fff;
+}
+
+
 .footer-s-1 {
     font-size: 15px;
     color: hsla(0, 0%, 100%, .8);
