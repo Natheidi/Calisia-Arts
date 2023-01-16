@@ -84,8 +84,12 @@ body {
     margin: 20px 0 20px 10px;
     transition: all 0.5s ease-in-out;
 }
-.fa {
-   opacity: 0%;
+.fa:hover{
+    color:#a48044;
+}
+
+.fa:visited{
+    color:#fff;
 }
 .footer-s-1 {
     font-size: 15px;
