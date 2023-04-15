@@ -190,6 +190,17 @@ ul{
 	margin-left: 25px;
 	margin-bottom: 25px;
 }
+a.download-button{
+	color: #a48044!important;
+	text-decoration: none!important;
+	letter-spacing: 2px;
+}
+
+a.download-button:hover{
+	color: #000!important;
+	text-decoration: none!important;
+}
+
 
 @media (max-width: 993px) {
 	.navbar-nav {
@@ -277,6 +288,10 @@ ul{
 		justify-content: space-around;
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+
+	a.download-button{
+		font-size: 14px;
 	}
 }
 
