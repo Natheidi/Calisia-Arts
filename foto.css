@@ -14,6 +14,15 @@
     width: 100%;
 }
 
+.gallery-title{
+    font-size: 18px;
+    text-align: center;
+    color: #c0c0c0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
 @media (max-width: 700px) {
     .lightgallery .image {
         width: calc(50% - 12px);
