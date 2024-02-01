@@ -1,0 +1,27 @@
+.lightgallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lightgallery .image {
+    margin: 6px;
+    width: calc(33% - 12px);
+}
+
+
+.lightgallery .image img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .lightgallery .image {
+        width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 400px) {
+    .lightgallery .image {
+        width: 100%;
+    }
+}
