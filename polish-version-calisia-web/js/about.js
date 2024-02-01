@@ -1,4 +1,3 @@
-lightGallery(document.querySelector('.lightgallery'));
 
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener("click", toggleMenu);
