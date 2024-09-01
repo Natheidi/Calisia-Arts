@@ -203,7 +203,9 @@ ul {
 	margin-left: 25px;
 	margin-bottom: 25px;
 }
-
+.navbar-collapse{
+	padding: 0!important;
+}
 a.download-button {
 	color: #a48044 !important;
 	text-decoration: none !important;

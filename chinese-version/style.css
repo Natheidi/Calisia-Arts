@@ -179,6 +179,9 @@ body {
 .navbar-default .navbar-form {
 	border: none;
 }
+.navbar-collapse{
+	padding: 0!important;
+}
 
 .hamburger-list-div {
 	display: none;

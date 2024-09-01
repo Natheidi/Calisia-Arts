@@ -219,6 +219,10 @@ a.download-button:hover {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.navbar-collapse{
+	padding: 0!important;
+}
+
 @media (max-width: 993px) {
 	.navbar-nav {
 		display: none;
