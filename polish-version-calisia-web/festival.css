@@ -513,6 +513,21 @@ ul {
     transform: scale(1.05);
     /* Delikatne powiększenie na hover */
 }
+.link2{
+    color: #a0a0a0!important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.link2:hover {
+    color: #a48044!important;
+    transform: scale(1.05)!important;
+}
+
+.link2:visited{
+    color: #fff;
+}
+
 
 .link-google {
     color: #a0a0a0;
