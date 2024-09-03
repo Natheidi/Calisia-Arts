@@ -223,6 +223,17 @@ a.download-button:hover {
 	padding: 0 !important;
 }
 
+.logo-box-wynik{
+	width: 400px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+.home-content2{
+	padding-bottom: 400px!important;
+}
+
 @media (max-width: 1205px) {
 
 	.home-image {
@@ -321,6 +332,13 @@ a.download-button:hover {
 	}
 }
 
+@media (max-width: 720px) {
+
+
+	.wynik{
+		margin-top: 50px;
+	}
+}
 
 @media (max-width: 600px) {
 	.hamburger-list {
@@ -358,6 +376,18 @@ a.download-button:hover {
 		justify-content: center;
 		align-items: center;
 		background-position: 2px 30px;
+	}
+
+	.logo-box-wynik{
+		width: 350px;
+		margin: auto;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.wynik{
+		padding-bottom: 250px;
 	}
 }
 

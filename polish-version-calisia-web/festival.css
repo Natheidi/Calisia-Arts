@@ -680,6 +680,10 @@ ul {
     .main2{
         height: 300px;
     }
+
+    .main3{
+        height: 400px!important;
+    }
 }
 
 @media (max-width: 600px) {
