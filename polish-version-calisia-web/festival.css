@@ -459,6 +459,10 @@ ul {
     text-align: center;
 }
 
+.main-festiwal{
+    height: 500px;
+}
+
 @media (max-width: 993px) {
     .navbar-nav {
         display: none;
