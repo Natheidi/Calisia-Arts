@@ -85,7 +85,7 @@ body {
 
 .footer-wrapper {
 	display: block;
-	padding: 10px 0;
+	padding: 50px 0;
 	position: relative;
 	background-color: #000;
 }
@@ -109,7 +109,7 @@ body {
 	color: hsla(0, 0%, 100%, .8);
 	font-size: 20px;
 	margin: 20px 0 20px 10px;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .fa:hover {
@@ -140,13 +140,13 @@ body {
 }
 
 .home-image {
-	background-image: url('slider-images/IMG_8448-male.jpg');
+	background-image: url('slider-images/bg2.jpg');
 	background-size: cover;
 	height: 800px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-position: 0 -270px;
+	background-position: 0 -390px;
 }
 
 .home-content {
@@ -159,11 +159,11 @@ body {
 	width: 400px;
 }
 
-.h2-index-box{
-	font-size: 90px!important;
+.h2-index-box {
+	font-size: 90px !important;
 }
 
-.logo-box{
+.logo-box {
 	padding-top: 25px;
 }
 
@@ -203,9 +203,7 @@ ul {
 	margin-left: 25px;
 	margin-bottom: 25px;
 }
-.navbar-collapse{
-	padding: 0!important;
-}
+
 a.download-button {
 	color: #a48044 !important;
 	text-decoration: none !important;
@@ -217,8 +215,28 @@ a.download-button:hover {
 	text-decoration: none !important;
 }
 
-.tp-caption.rev-video h2.h2-index{
+.tp-caption.rev-video h2.h2-index {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-collapse {
+	padding: 0 !important;
+}
+
+@media (max-width: 1205px) {
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0 -20px;
+	}
+
+
+
 }
 
 @media (max-width: 993px) {
@@ -289,6 +307,21 @@ a.download-button:hover {
 
 }
 
+@media (max-width: 840px) {
+
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 2px 30px;
+	}
+}
+
+
 @media (max-width: 600px) {
 	.hamburger-list {
 		width: 300px;
@@ -318,13 +351,13 @@ a.download-button:hover {
 	}
 
 	.home-image {
-		background-image: url('slider-images/IMG_8448-male.jpg');
+		background-image: url('slider-images/bg.jpg');
 		background-size: cover;
-		height: 800px;
+	
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: 0 -270px;
+		background-position: 2px 30px;
 	}
 }
 
@@ -367,29 +400,27 @@ a.download-button:hover {
 	}
 
 	.home-image {
-		background-image: url('slider-images/IMG_8448-male.jpg');
+		background-image: url('slider-images/bg.jpg');
 		background-size: cover;
-		background-repeat: no-repeat; /* Zapobiega powtarzaniu zdjęcia */
-		background-position: center top; /* Ustawia zdjęcie wyżej */
 		height: 800px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: -5px 0px;
+		background-position: -40px -2px;
 
-		
+
 	}
 
 	.home-content {
 		padding-bottom: 200px;
 	}
 
-	.footer-wrapper{
+	.footer-wrapper {
 		padding: 0;
-		
+
 	}
 
-	.aligncenter{
+	.aligncenter {
 		padding-bottom: 10px;
 	}
 }
