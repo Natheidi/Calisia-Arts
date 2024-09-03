@@ -513,6 +513,10 @@ ul {
     /* Delikatne powiększenie na hover */
 }
 
+.margin-bez{
+    height: 170px!important;
+}
+
 @media (max-width: 993px) {
     .navbar-nav {
         display: none;
