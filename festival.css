@@ -98,12 +98,12 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.fa:hover{
-    color:#a48044;
+.fa:hover {
+    color: #a48044;
 }
 
-.fa:visited{
-    color:#fff;
+.fa:visited {
+    color: #fff;
 }
 
 .footer-s-1 {
@@ -408,9 +408,11 @@ ul {
     background-color: #a48044;
     padding: 10px;
 }
+
 .fa-arrow-down {
     color: #a48044;
 }
+
 .border-competition {
     border-bottom: #a48044 2px dotted;
     margin-bottom: 10px;
@@ -435,12 +437,13 @@ ul {
 .image-about-1 {
     width: 100%;
 }
+
 .image-about-2 {
     width: 100%;
 }
 
 
-.container-photo{
+.container-photo {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
@@ -450,13 +453,86 @@ ul {
 }
 
 
-.label-photo{
+.label-photo {
     color: #FFF;
     opacity: 60%;
     font-size: 14px;
     background-color: #a48044;
     padding: 10px;
     text-align: center;
+}
+
+.main-festiwal {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.kafelek-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    /* Szerokość kafelka */
+    height: 100px;
+    /* Wysokość kafelka */
+    background-color: #000;
+    /* Czarne tło */
+    color: #fff;
+    /* Biały tekst */
+    border: 2px dotted #a48044;
+    /* Złote, kropkowane obramowanie */
+    border-radius: 8px;
+    /* Zaokrąglenie rogów */
+    text-align: center;
+    font-size: 24px;
+    /* Rozmiar czcionki */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* Brak podkreślenia */
+    margin: 10px;
+    max-width: 200px;
+}
+
+.card:hover {
+    background-color: #a48044;
+    /* Zmiana tła na złote po najechaniu */
+    color: #fff;
+    /* Zmiana koloru tekstu na czarny */
+    border-color: #000;
+    /* Zmiana koloru obramowania na czarne */
+    transform: scale(1.05);
+    /* Delikatne powiększenie na hover */
+}
+.link-google {
+    color: #a0a0a0!important;
+    cursor: pointer!important;
+    transition: all 0.3s ease!important;
+}
+
+.link-google:hover{
+    color: #a48044!important;
+    transform: scale(1.05)!important;
+}
+
+.link-google:visited{
+    color: #fff!important;
+}
+.margin-bez{
+    height: 200px!important;
+}
+
+.card2{
+    padding: 10px 5px;
 }
 
 @media (max-width: 993px) {
@@ -554,7 +630,8 @@ ul {
     .team-h {
         width: 80%;
     }
-    .container-photo{
+
+    .container-photo {
         width: 50%;
     }
 }
@@ -567,8 +644,24 @@ ul {
     .team-h {
         width: 95%;
     }
-    .container-photo{
+
+    .container-photo {
         width: 80%;
+    }
+
+    .main-festiwal {
+        flex-direction: column;
+        /* Ustawienie kafelków jeden pod drugim */
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 30px;
+        height: 200px;
+        justify-content: flex-start;
+
+    }
+
+    .main2{
+        height: 300px;
     }
 }
 
@@ -595,7 +688,8 @@ ul {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .container-photo{
+
+    .container-photo {
         width: 93%;
     }
 }
