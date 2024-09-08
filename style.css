@@ -223,6 +223,59 @@ a.download-button:hover {
 	padding: 0 !important;
 }
 
+@media (max-width: 1500px) {
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px -200px;
+
+
+	}
+
+
+
+}
+
+@media (max-width: 1500px) {
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px -100px;
+
+
+	}
+
+
+
+}
+
+@media (max-width: 1295px) {
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px -50px;
+
+	}
+
+
+
+}
+
 @media (max-width: 1205px) {
 
 	.home-image {
@@ -232,7 +285,25 @@ a.download-button:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: 0 -20px;
+		background-position: 0px -20px;
+
+	}
+
+
+
+}
+
+@media (max-width: 1155px) {
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px 30px;
+
 	}
 
 
@@ -305,7 +376,33 @@ a.download-button:hover {
 		box-shadow: none;
 	}
 
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+		height: 800px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px 90px;
+
+	}
+
 }
+
+@media (max-width: 930px) {
+
+
+	.home-image {
+		background-image: url('slider-images/bg.jpg');
+		background-size: cover;
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-position: 0px 150px;
+	}
+}
+
 
 @media (max-width: 840px) {
 
@@ -317,7 +414,7 @@ a.download-button:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: 2px 30px;
+		background-position: 0px 150px;
 	}
 }
 
@@ -357,7 +454,7 @@ a.download-button:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: 2px 30px;
+		background-position: -120px 190px;
 	}
 }
 
