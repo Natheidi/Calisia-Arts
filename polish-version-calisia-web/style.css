@@ -146,7 +146,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-position: 0 -390px;
+	background-position: 0 -200px;
 }
 
 .home-content {
@@ -436,7 +436,7 @@ a.download-button:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-position: -40px -2px;
+		background-position: -120px 70px;
 
 
 	}
