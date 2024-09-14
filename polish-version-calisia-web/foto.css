@@ -322,6 +322,11 @@ a.download-button:hover {
 		box-shadow: none;
 	}
 
+	#footer{
+		visibility: hidden;
+	}
+
+
 }
 
 @media (max-width: 600px) {
@@ -349,6 +354,7 @@ a.download-button:hover {
 	a.download-button {
 		font-size: 14px;
 	}
+
 
 }
 
