@@ -694,6 +694,10 @@ ul {
         margin-top: 120px;
     }
 
+    .container-text-photos{
+        margin-top: 230px;
+    }
+}
 @media (max-width: 600px) {
     .hamburger-list {
         width: 300px;
