@@ -702,6 +702,10 @@ ul {
     .container-text-photos2{
         margin-top: 230px;
     }
+
+    .program-mobile{
+        font-size: 13px;
+    }
 }
 @media (max-width: 600px) {
     .hamburger-list {
