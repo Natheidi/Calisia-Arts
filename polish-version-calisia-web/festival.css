@@ -442,6 +442,15 @@ ul {
     width: 100%;
 }
 
+.program-text{
+    text-align: center!important;
+}
+
+.italic{
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
 
 .container-photo {
     width: 30%;
@@ -452,6 +461,14 @@ ul {
     margin-right: auto;
 }
 
+.text2{
+    font-style: normal;
+}
+
+.gold {
+    color:#a48044;
+    font-weight: 700;
+}
 
 .label-photo {
     color: #FFF;
@@ -513,34 +530,22 @@ ul {
     transform: scale(1.05);
     /* Delikatne powiększenie na hover */
 }
-.link2{
-    color: #a0a0a0!important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.link2:hover {
+
+
+.link2 {
     color: #a48044!important;
-    transform: scale(1.05)!important;
-}
-
-.link2:visited{
-    color: #fff;
-}
-
-
-.link-google {
-    color: #a0a0a0;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.link-google:hover{
-    color: #a48044;
+.link2:hover{
+    
+    color: #a0a0a0!important;
     transform: scale(1.05);
 }
 
-.link-google:visited{
+.link2:visited{
     color: #fff;
 }
 
