@@ -537,6 +537,7 @@ ul {
     color: #a48044!important;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 800;
 }
 
 .link2:hover{
