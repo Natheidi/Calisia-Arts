@@ -241,6 +241,7 @@ ul{
     font-size: 25px;
     margin-bottom: 50px;
     color: #a48044;
+    opacity: 100%!important;
 }
 
 .text-m-window{
