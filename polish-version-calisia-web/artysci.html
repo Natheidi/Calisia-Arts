@@ -5,129 +5,252 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio, Foundation, Calisia-Arts, Calisia, Arts, Piano, Music, Competition" />
+
     <title>Calisia-Arts</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- end Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300' rel='stylesheet'
         type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,500,600,700,800,300' rel='stylesheet'
         type='text/css'>
-    <!-- end awesome icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="jury.css">
+    <link rel="stylesheet" href="festival.css">
     <script src="https://kit.fontawesome.com/320464dc8f.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main Stylesheet CSS -->
-    <link rel="stylesheet" href="festival.css?id=8">
-    <link rel="stylesheet" href="rules.css?id=8">
-    <link rel="stylesheet" href="team.css">
-    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 </head>
 
 <body>
 
-    <body>
-        <header class="header">
-            <div id="home">
-                <div class="container">
-                    <div class="navbar navbar-default" role="navigation">
-                        <div class="navbar-collapse">
-                            <a href="indexpl.html"><img class="logo-calisia" src="slider-images/calisia-format.png"
-                                    alt="logo, gold letters, calisia arts" /></a>
-                            <ul class="nav navbar-nav">
-                                <li><a data-scroll href="indexpl.html" class="int-collapse-menu">Home</a></li>
-                                <li><a data-scroll href="about-pl.html" class="int-collapse-menu">O Kaliszu</a>
-                                </li>
-                                <li><a data-scroll href="team-pl.html" class="int-collapse-menu">Zespół</a></li>
-                                <li><a data-scroll href="contact-pl.html" class="int-collapse-menu">Kontakt</a>
-                                </li>
-                                <li><a data-scroll href="rulespl.html" class="int-collapse-menu">Konkurs</a></li>
-                                <li class="active"><a data-scroll href="festival.html"
-                                        class="int-collapse-menu">Festiwal</a></li>
+    <header class="header">
+        <div id="home">
+            <div class="container">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-collapse">
+                        <a href="indexpl.html"><img class="logo-calisia" src="slider-images/calisia-format.png"
+                                alt="logo, gold letters, calisia arts" /></a>
+                        <ul class="nav navbar-nav">
+                            <li><a data-scroll href="indexpl.html" class="int-collapse-menu">Home</a></li>
+                            <li><a data-scroll href="about-pl.html" class="int-collapse-menu">O Kaliszu</a>
+                            </li>
+                            <li><a data-scroll href="team-pl.html" class="int-collapse-menu">Zespół</a></li>
+                            <li><a data-scroll href="contact-pl.html" class="int-collapse-menu">Kontakt</a>
+                            </li>
+                            <li><a data-scroll href="rulespl.html" class="int-collapse-menu">Konkurs</a></li>
+                            <li class="active"><a data-scroll href="festival.html"
+                                    class="int-collapse-menu">Festiwal</a></li>
 
-                            </ul>
-                            <div class="languages">
-                                <a href="indexpl.html"><img class="img-flag"
-                                        src="slider-images/icons8-poland-48.png" /></a>
-                                <a href="../index.html"><img class="img-flag"
-                                        src="slider-images/icons8-great-britain-48.png" /></a>
-                                <a href="../chinese-version/index-chinese.html"><img class="img-flag"
-                                        src="slider-images/icons8-china-48.png" /></a>
-                            </div>
-                            <button class="hamburger">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
+                        </ul>
+                        <div class="languages">
+                            <a href="indexpl.html"><img class="img-flag" src="slider-images/icons8-poland-48.png" /></a>
+                            <a href="../index.html"><img class="img-flag"
+                                    src="slider-images/icons8-great-britain-48.png" /></a>
+                            <a href="../chinese-version/index-chinese.html"><img class="img-flag"
+                                    src="slider-images/icons8-china-48.png" /></a>
                         </div>
-                        <div class="hamburger-list-div">
-                            <ul class="hamburger-list">
-                                <li class="li-hamburger"><a data-scroll href="indexpl.html"
-                                        class="int-collapse-menu">Home</a>
-                                </li>
-                                <li class="li-hamburger"><a data-scroll href="about-pl.html" class="int-collapse-menu">O
-                                        Kaliszu</a>
-                                </li>
-                                <li class="li-hamburger"><a data-scroll href="team-pl.html"
-                                        class="int-collapse-menu">Zespół</a>
-                                </li>
-                                <li class="li-hamburger"><a data-scroll href="contact-pl.html"
-                                        class="int-collapse-menu">Kontakt</a></li>
-                                <li><a data-scroll href="rulespl.html" class="int-collapse-menu">Konkurs</a></li>
-                                <li><a data-scroll href="festival.html" class="int-collapse-menu">Festiwal</a></li>
+                        <button class="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="hamburger-list-div">
+                        <ul class="hamburger-list">
+                            <li class="li-hamburger"><a data-scroll href="indexpl.html"
+                                    class="int-collapse-menu">Home</a>
+                            </li>
+                            <li class="li-hamburger"><a data-scroll href="about-pl.html" class="int-collapse-menu">O
+                                    Kaliszu</a>
+                            </li>
+                            <li class="li-hamburger"><a data-scroll href="team-pl.html"
+                                    class="int-collapse-menu">Zespół</a>
+                            </li>
+                            <li class="li-hamburger"><a data-scroll href="contact-pl.html"
+                                    class="int-collapse-menu">Kontakt</a></li>
+                            <li><a data-scroll href="rulespl.html" class="int-collapse-menu">Konkurs</a></li>
+                            <li><a data-scroll href="festival.html" class="int-collapse-menu">Festiwal</a></li>
 
-                            </ul>
-                            <div class="languages-2">
-                                <a href="indexpl.html"><img class="img-flag"
-                                        src="slider-images/icons8-poland-48.png" /></a>
-                                <a href="../index.html"><img class="img-flag"
-                                        src="slider-images/icons8-great-britain-48.png" /></a>
-                                <a href="../chinese-version/index-chinese.html"><img class="img-flag"
-                                        src="slider-images/icons8-china-48.png" /></a>
+                        </ul>
+                        <div class="languages-2">
+                            <a href="indexpl.html"><img class="img-flag" src="slider-images/icons8-poland-48.png" /></a>
+                            <a href="../index.html"><img class="img-flag"
+                                    src="slider-images/icons8-great-britain-48.png" /></a>
+                            <a href="../chinese-version/index-chinese.html"><img class="img-flag"
+                                    src="slider-images/icons8-china-48.png" /></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <body>
+        <div class="team-container">
+            <div class="jury-box">
+                <div class="team-h">
+                    <h1 class="h1-team">Artyści</h1>
+                </div>
+                <div class="main-festiwal margin-bez main3">
+                    <a href="rules.html" class="card card2">
+                        O festiwalu 2024
+                    </a>
+                    <a href="wyniki.html" class="card card2">
+                        Program
+                    </a>
+                    <a href="foto-festival24.html" class="card card2">
+                        Fotorelacja
+                    </a>
+                </div>
+                <img class="jury-img mb-5" src="slider-images/lukasz.jpg">
+                <div class="label-photo">
+                    Dr Łukasz Byrdy
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#ModalLukasz">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+                <img class="jury-img mb-5" src="slider-images/raubo.jpg">
+                <div class="label-photo">
+                    prof. Zbigniew Raubo
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+                <img class="jury-img mb-5" src="slider-images/artz.jpg">
+                <div class="label-photo">
+                    Prof. Manfred Wagner-Artzt
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#ModalEvangelia">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+                <img class="jury-img mb-5" src="slider-images/sobich.jpg">
+                <div class="label-photo">
+                    Katarzyna Sobich
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#ModalAnthony">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+                <img class="jury-img mb-5" src="slider-images/domagala.jpg">
+                <div class="label-photo">
+                    Maciej Domagała
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ModalQi">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+                <img class="jury-img mb-5" src="slider-images/brizzi.jpg">
+                <div class="label-photo">
+                    Stefano Brizzi
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#ModalFilip">
+                    Biografia
+                </button>
+                <div class="line">
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">prof.
+                                    Zbigniew Raubo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-
+                            <div class="modal-body text-black">
+                                Laureat Konkursu im F. Busoniego w Bolzano (1991), im F. Liszta w Utrechcie (1992)-jak
+                                dotąd jest jedynym polskim laureatem tego prestiżowego Konkursu- oraz Konkursu im K.
+                                Szymanowskiego w Łodzi (1987). Ukończył z wyróżnieniem katowicką Akademię Muzyczną w
+                                klasie prof. Andrzeja Jasińskiego, którego następnie został asystentem. Aktualnie
+                                pracuje na stanowisku profesora w macierzystej Uczelni. W czerwcu 2013 Prezydent RP
+                                nadał mu tytuł profesora sztuk muzycznych. Posiada tytuł Ambasadora Miasta Kalisza. W
+                                roku 2023 został odznaczony Złotym Krzyżem Zasługi. Koncertował we wszystkich
+                                filharmoniach w kraju. Występował z najwybitniejszymi polskimi dyrygentami takimi, jak:
+                                Jerzy Maksymiuk, Antoni Wit, Agnieszka Duczmal, Jerzy Salwarowski, Mirosław J.
+                                Błaszczyk, Marek Pijarowski, Tomasz Bugaj, Jerzy Swoboda, Krzysztof Missona, Łukasz
+                                Borowicz, Marek Moś, Czesław Grabowski, Renard Czajkowski. W swoim repertuarze posiada
+                                ponad 30 utworów na fortepian z orkiestrą . Wśród jego zrealizowanych dokonań
+                                artystycznych znajdują się m.in. występ z recitalem na Festiwalu Chopinowskim w
+                                Vancouver, Festiwalu „Poolse Meesters” w Belgii, jak też warsztaty pianistyczne i
+                                koncert w ramach Festiwalu Campos do Jordao w Brazylii oraz recital i kurs mistrzowski
+                                na Międzynarodowym Festiwalu Chopinowskim w Dusznikach-Zdroju. Dokonał szeregu nagrań
+                                dla krajowych i zagranicznych firm fonograficznych m.in. dla japońskich filii firm
+                                Deutsche Gramophon i RCA, International Music Corporation, firmy DUX i Żuk Records. Z
+                                upodobaniem uprawia również kameralistykę, występował m.in. z Kwartetami Śląskim,
+                                Wilanów i Camerata oraz z Bartłomiejem Niziołem, Urszulą Kryger, Elżbietą Mrożek-Loską,
+                                Piotrem Janosikiem. Prowadzi aktywną działalność pedagogiczną, obok etatowej pracy w
+                                Akademii Muzycznej w Katowicach spotyka się z młodzieżą pianistyczną na licznych
+                                kursach, udziela się również konsultując szkolnictwo muzyczne niższych szczebli.
+                                Intensywnie naucza również na pianistycznych kursach mistrzowskich. Jego działalność na
+                                niwie naukowej obejmuje między innymi : pełnienie funkcji promotora dziewięciu prac
+                                doktorskich a także wielokrotnie recenzenta w przewodach doktorskich i w postępowaniach
+                                o nadanie tytułu profesora. Brał wielokrotnie udział w pracach jury konkursów krajowych
+                                i zagranicznych m.in. w Ogólnopolskim Konkursie im. F. Chopina w Warszawie, Chopin
+                                Competition in Asia w Japonii czy też Konkursu o stypendia Fundacji Yamaha. Był również
+                                jurorem XI Międzynarodowego Konkursu im. I. J. Paderewskiego w Bydgoszczy oraz V
+                                Międzynarodowego Bałtyckiego Konkursu Pianistycznego w Gdańsku. Wśród jego wychowanków
+                                można znaleźć laureatów konkursów muzycznych- im. Liszta we Wrocławiu, im. Liszta w
+                                Parmie, Międzynarodowego Konkursu im. F. Chopina dla Dzieci i Młodzieży w Szafarni,
+                                Ogólnopolskiego Konkursu im. Chopina w Warszawie, Festiwalu Pianistyki Polskiej w
+                                Słupsku i innych. W ostatnich latach jego student, a aktualnie asystent Tymoteusz Bies
+                                został zwycięzcą pierwszej edycji Międzynarodowego Konkursu im. K. Szymanowskiego w
+                                Katowicach.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </header>
-
-
-        <div class="team-container">
-            <div data-aos="zoom-in" data-aos-duration="1000" class="team-h">
-                <h1 class="h1-team">Artyści</h1>
-            </div>
-            <div class="main-festiwal margin-bez">
-                <a href="o-festiwalu.html" class="card">
-                    O festiwalu
-                </a>
-                <a href="program.html" class="card">
-                    Program
-                </a>
-
-            </div>
-
-            <div class="flex-team">
-
-                <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                    <div class="small-class-team">
-                        <img class="image-1" src="slider-images/lukasz.jpg" alt="team member" />
-                        <h1 class="h1-team-members">dr Łukasz Byrdy</h1>
-                    </div>
-                    <div class="team-text">
-                        <p class="p-team">
-                            Dr Łukasz Byrdy jest jednym z najwybitniejszych pianistów młodego pokolenia, który w trakcie
+            <!-- Modal -->
+            <div class="modal fade" id="ModalLukasz" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">Dr Łukasz Byrdy
+                                - Biografia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            Łukasz Byrdy jest jednym z najwybitniejszych pianistów młodego pokolenia, który w trakcie
                             trwającej już ponad 10 lat kariery koncertowej, wystąpił kilkaset razy z recitalami i
                             koncertami w większości państw Europy, a także w USA, Kanadzie, Chinach i Zjednoczonych
-                            Emiratach Arabskich.
-
-                            Urodzony w Katowicach pianista jest laureatem ponad 20 międzynarodowych konkursów
-                            pianistycznych, w tym zdobywcą czołowych nagród na Międzynarodowym Konkursie Pianistycznym
-                            im. Fryderyka Chopina w Pekinie oraz Międzynarodowym Konkursie Pianistycznym w Hanowerze.
-                            Nagradzany był również na konkursach w Szwajcarii, Włoszech, Malcie i Polsce. Po
+                            Emiratach Arabskich. Urodzony w Katowicach pianista jest laureatem ponad 20 międzynarodowych
+                            konkursów pianistycznych, w tym zdobywcą czołowych nagród na Międzynarodowym Konkursie
+                            Pianistycznym im. Fryderyka Chopina w Pekinie oraz Międzynarodowym Konkursie Pianistycznym w
+                            Hanowerze. Nagradzany był również na konkursach w Szwajcarii, Włoszech, Malcie i Polsce. Po
                             entuzjastycznie przyjętych przez publiczność i krytyków muzycznych występach na XVII
                             Międzynarodowym Konkursie Pianistycznym im. Fryderyka Chopina w Warszawie, kariera pianisty
-                            wyraźnie nabrała tempa. Łukasz Byrdy jest również jednym z dziesięciu półfinalistów
+                            wyraźnie nabrała tempa. (…) Łukasz Byrdy jest również jednym z dziesięciu półfinalistów
                             prestiżowego Honens International Piano Competition w Calgary (2022), a także laureatem
                             licznych stypendiów i nagród artystycznych, w tym wielokrotnym stypendystą Ministra Kultury
                             i Dziedzictwa Narodowego oraz zdobywcą przyznawanej najwybitniejszym polskim artystom
@@ -153,9 +276,8 @@
                             Warszawie, Muzeum Fryderyka Chopina w Warszawie, Domu Urodzenia Fryderyka Chopina w
                             Żelazowej Woli, Zamku Królewskim w Warszawie, Sali Ratuszowej Pałacu Kultury i Nauki w
                             Warszawie, Teatrze Królewskim i Pałacu na Wyspie w Łazienkach Królewskich w Warszawie.
-
-                            Dr Łukasz Byrdy jest absolwentem Universität der Künste w Berlinie i Akademii Muzycznej im.
-                            I. J. Paderewskiego w Poznaniu. Od lat prowadzi bogatą działalność pedagogiczną, będąc na co
+                            Łukasz Byrdy jest absolwentem Universität der Künste w Berlinie i Akademii Muzycznej im. I.
+                            J. Paderewskiego w Poznaniu. Od lat prowadzi bogatą działalność pedagogiczną, będąc na co
                             dzień wykładowcą katedry fortepianu w Akademii Muzycznej im. Ignacego Jana Paderewskiego w
                             Poznaniu. Prowadzi liczne kursy i warsztaty w Polsce i za granicą, gdzie współpracował z
                             m.in. Mount Royal University w Calgary, University of Agder w Kristiansand, Estońską
@@ -165,245 +287,203 @@
                             całego świata „Morningside Music Bridge” na New England Conservatory of Music w Bostonie.
                             Pianista dokonywał wielokrotnie nagrań dla radia i telewizji, a jego występy transmitowane
                             były przez Polskie Radio, Telewizję Polską, a także Litewskie Narodowe Radio i Telewizję,
-                            Centralną Telewizję Chińska CCTV oraz radio i telewizję sychuańską.
+                            Centralną Telewizję Chińska CCTV oraz radio i telewizję sychuańską. W 2017 roku dzięki
+                            wsparciu Fundacji Piotra Klera ukazała się debiutancka płyta artysty z koncertami
+                            fortepianowymi F. Chopina i W. A. Mozarta.
 
-                            W 2017 roku dzięki wsparciu Fundacji Piotra Klera ukazała się debiutancka płyta artysty z
-                            koncertami fortepianowymi F. Chopina i W. A. Mozarta.
-                        </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                <div class="small-class-team">
-                    <img class="image-1" src="slider-images/raubo.jpg" alt="team member" />
-                    <h1 class="h1-team-members">prof. Zbigniew Raubo</h1>
-                </div>
-                <div class="team-text">
-                    <p class="p-team">
-
-                        Laureat Konkursu im F. Busoniego w Bolzano (1991), im F. Liszta w Utrechcie
-                        (1992)-jak dotąd jest jedynym polskim laureatem tego prestiżowego Konkursu- oraz
-                        Konkursu im K. Szymanowskiego w Łodzi (1987).
-                        Ukończył z wyróżnieniem katowicką Akademię Muzyczną w klasie prof. Andrzeja
-                        Jasińskiego, którego następnie został asystentem. Aktualnie pracuje na stanowisku
-                        profesora w macierzystej Uczelni. W czerwcu 2013 Prezydent RP nadał mu tytuł
-                        profesora sztuk muzycznych. Posiada tytuł Ambasadora Miasta Kalisza. W roku
-                        2023 został odznaczony Złotym Krzyżem Zasługi.
-                        Koncertował we wszystkich filharmoniach w kraju. Występował z najwybitniejszymi
-                        polskimi dyrygentami takimi, jak: Jerzy Maksymiuk, Antoni Wit, Agnieszka
-                        Duczmal, Jerzy Salwarowski, Mirosław J. Błaszczyk, Marek Pijarowski, Tomasz
-                        Bugaj, Jerzy Swoboda, Krzysztof Missona, Łukasz Borowicz, Marek Moś, Czesław
-                        Grabowski, Renard Czajkowski. W swoim repertuarze posiada ponad 30 utworów na
-                        fortepian z orkiestrą . Wśród jego zrealizowanych dokonań artystycznych znajdują
-                        się m.in. występ z recitalem na Festiwalu Chopinowskim w Vancouver, Festiwalu
-                        „Poolse Meesters” w Belgii, jak też warsztaty pianistyczne i koncert w ramach
-                        Festiwalu Campos do Jordao w Brazylii oraz recital i kurs mistrzowski na
-                        Międzynarodowym Festiwalu Chopinowskim w Dusznikach-Zdroju.
-                        Dokonał szeregu nagrań dla krajowych i zagranicznych firm fonograficznych m.in.
-                        dla japońskich filii firm Deutsche Gramophon i RCA, International Music
-                        Corporation, firmy DUX i Żuk Records.
-                        Z upodobaniem uprawia również kameralistykę, występował m.in. z Kwartetami
-                        Śląskim, Wilanów i Camerata oraz z Bartłomiejem Niziołem, Urszulą Kryger,
-                        Elżbietą Mrożek-Loską, Piotrem Janosikiem.
-                        Prowadzi aktywną działalność pedagogiczną, obok etatowej pracy w Akademii
-                        Muzycznej w Katowicach spotyka się z młodzieżą pianistyczną na licznych kursach,
-                        udziela się również konsultując szkolnictwo muzyczne niższych szczebli.
-                        Intensywnie naucza również na pianistycznych kursach mistrzowskich. Jego
-                        działalność na niwie naukowej obejmuje między innymi : pełnienie funkcji
-                        promotora dziewięciu prac doktorskich a także wielokrotnie recenzenta w
-                        przewodach doktorskich i w postępowaniach o nadanie tytułu profesora.
-                        Brał wielokrotnie udział w pracach jury konkursów krajowych i zagranicznych m.in.
-                        w Ogólnopolskim Konkursie im. F. Chopina w Warszawie,
-                        Chopin Competition in Asia w Japonii czy też Konkursu o stypendia Fundacji
-                        Yamaha. Był również jurorem XI Międzynarodowego Konkursu im. I. J.
-                        Paderewskiego w Bydgoszczy oraz V Międzynarodowego Bałtyckiego Konkursu
-                        Pianistycznego w Gdańsku.
-                        Wśród jego wychowanków można znaleźć laureatów konkursów muzycznych- im.
-                        Liszta we Wrocławiu, im. Liszta w Parmie, Międzynarodowego Konkursu im. F.
-                        Chopina dla Dzieci i Młodzieży w Szafarni, Ogólnopolskiego Konkursu im. Chopina
-                        w Warszawie, Festiwalu Pianistyki Polskiej w Słupsku i innych. W ostatnich latach
-                        jego student, a aktualnie asystent Tymoteusz Bies został zwycięzcą pierwszej edycji
-                        Międzynarodowego Konkursu im. K. Szymanowskiego w Katowicach.
-                    </p>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalEvangelia" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">Prof. Manfred
+                                Wagner-Artzt - Biografia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            Profesor Manfred Wagner-Artzt, urodzony w Wiedniu, rozpoczął swoją naukę w wieku 13 lat w
+                            klasie „Koncertowej” pod kierunkiem Richarda Hausera w byłej Akademii Muzyki i Sztuk
+                            Scenicznych w Wiedniu. Później kontynuował studia u Aleksandra Jennera na Uniwersytecie
+                            Muzyki i Sztuk Scenicznych w Wiedniu, gdzie, jako student Jennera, zdobył dyplom koncertowy
+                            w 1974 roku. Kilka miesięcy później ukończył szkolenie z zakresu muzyki kameralnej i od tego
+                            czasu występował publicznie jako solista, muzyk kameralny i akompaniator. Jego
+                            międzynarodowa kariera koncertowa rozpoczęła się od złotego medalu na Międzynarodowym
+                            Konkursie Pianistycznym w Vercelli, co doprowadziło go do występów w niektórych z
+                            najbardziej prestiżowych sal koncertowych w Europie (w tym Wielkiej Sali Musikverein w
+                            Wiedniu, Wielkiej Sali Konzerthaus w Wiedniu, Mozarteum w Salzburgu, Filharmonii
+                            Berlińskiej, Am Gasteig w Monachium, Sali WDR w Kolonii, Salle Gaveau w Paryżu, Saint John's
+                            Smith Square w Londynie, Filharmonii Warszawskiej, De Doelen w Rotterdamie, Concertgebouw w
+                            Amsterdamie i innych), a także w Stanach Zjednoczonych (w tym Narodowej Galerii Sztuki w
+                            Waszyngtonie), Rosji (w tym w Konserwatorium im. Czajkowskiego w Moskwie, Ermitażu w
+                            Petersburgu, Muzeum Puszkina), Japonii, Chinach, Hongkongu, Ameryce Południowej oraz na
+                            Bliskim i Środkowym Wschodzie. Jego działalność artystyczna została udokumentowana w
+                            licznych nagraniach dla międzynarodowych stacji radiowych i telewizyjnych, a także na
+                            płytach i CD (EMI, GRAMOLA, MDG, DIVERTIMENTO i innych). Znaczącym aspektem jego
+                            działalności koncertowej były obszerne współprace z wieloma międzynarodowo uznawanymi
+                            instrumentalistami, takimi jak członkowie Kwartetu Alban Berg, Wiedeński Sekstet Smyczkowy,
+                            Wiedeńska Filharmonia, a także Heinrich Schiff, Christian Altenburger, Gerald Schubert,
+                            Ernst Kovacic, Ludwig Streicher, Roland Pidoux i inni. Występuje również jako duet
+                            fortepianowy ze swoją żoną, Susanną Artzt. Od 1975 do 2010 roku był członkiem „exxj”
+                            (Ensemble 20th Century), angażując się w najnowsze osiągnięcia muzyki współczesnej.
+                            Prowadził mistrzowskie kursy i wykłady w Konserwatorium im. Czajkowskiego w Moskwie i w USA,
+                            a także mistrzowskie kursy krajowe i międzynarodowe oraz pełnił funkcję wykładowcy w
+                            Europejskiej Akademii w Montepulciano. W październiku 1975 roku rozpoczął pracę w
+                            Uniwersytecie Muzyki i Sztuk Scenicznych w Wiedniu, gdzie w 1999 roku uzyskał tytuł
+                            profesora zwyczajnego, a emeryturę przeszedł w październiku 2021 roku.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                <div class="small-class-team">
-                    <img class="image-1" src="slider-images/artz.jpg" alt="team member" />
-                    <h1 class="h1-team-members">prof. Manfred Wagner-Artzt</h1>
-                </div>
-                <div class="team-text">
-                    <p class="p-team">
-
-                        Profesor Manfred Wagner-Artzt, urodzony w Wiedniu, rozpoczął swoją naukę w wieku 13 lat w klasie
-                        „Koncertowej” pod kierunkiem Richarda Hausera w byłej Akademii Muzyki i Sztuk Scenicznych w
-                        Wiedniu. Później kontynuował studia u Aleksandra Jennera na Uniwersytecie Muzyki i Sztuk
-                        Scenicznych w Wiedniu, gdzie, jako student Jennera, zdobył dyplom koncertowy w 1974 roku. Kilka
-                        miesięcy później ukończył szkolenie z zakresu muzyki kameralnej i od tego czasu występował
-                        publicznie jako solista, muzyk kameralny i akompaniator.
-
-                        Jego międzynarodowa kariera koncertowa rozpoczęła się od złotego medalu na Międzynarodowym
-                        Konkursie Pianistycznym w Vercelli, co doprowadziło go do występów w niektórych z najbardziej
-                        prestiżowych sal koncertowych w Europie (w tym Wielkiej Sali Musikverein w Wiedniu, Wielkiej
-                        Sali Konzerthaus w Wiedniu, Mozarteum w Salzburgu, Filharmonii Berlińskiej, Am Gasteig w
-                        Monachium, Sali WDR w Kolonii, Salle Gaveau w Paryżu, Saint John's Smith Square w Londynie,
-                        Filharmonii Warszawskiej, De Doelen w Rotterdamie, Concertgebouw w Amsterdamie i innych), a
-                        także w Stanach Zjednoczonych (w tym Narodowej Galerii Sztuki w Waszyngtonie), Rosji (w tym w
-                        Konserwatorium im. Czajkowskiego w Moskwie, Ermitażu w Petersburgu, Muzeum Puszkina), Japonii,
-                        Chinach, Hongkongu, Ameryce Południowej oraz na Bliskim i Środkowym Wschodzie.
-
-                        Jego działalność artystyczna została udokumentowana w licznych nagraniach dla międzynarodowych
-                        stacji radiowych i telewizyjnych, a także na płytach i CD (EMI, GRAMOLA, MDG, DIVERTIMENTO i
-                        innych).
-
-                        Znaczącym aspektem jego działalności koncertowej były obszerne współprace z wieloma
-                        międzynarodowo uznawanymi instrumentalistami, takimi jak członkowie Kwartetu Alban Berg,
-                        Wiedeński Sekstet Smyczkowy, Wiedeńska Filharmonia, a także Heinrich Schiff, Christian
-                        Altenburger, Gerald Schubert, Ernst Kovacic, Ludwig Streicher, Roland Pidoux i inni. Występuje
-                        również jako duet fortepianowy ze swoją żoną, Susanną Artzt.
-
-                        Od 1975 do 2010 roku był członkiem „exxj” (Ensemble 20th Century), angażując się w najnowsze
-                        osiągnięcia muzyki współczesnej.
-
-                        Prowadził mistrzowskie kursy i wykłady w Konserwatorium im. Czajkowskiego w Moskwie i w USA, a
-                        także mistrzowskie kursy krajowe i międzynarodowe oraz pełnił funkcję wykładowcy w Europejskiej
-                        Akademii w Montepulciano.
-
-                        W październiku 1975 roku rozpoczął pracę w Uniwersytecie Muzyki i Sztuk Scenicznych w Wiedniu,
-                        gdzie w 1999 roku uzyskał tytuł profesora zwyczajnego, a emeryturę przeszedł w październiku 2021
-                        roku.
-                    </p>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalAnthony" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">Katarzyna
+                                Sobich - Biografia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            Katarzyna Sobich urodziła się 26 lutego 2000 roku. Naukę gry na fortepianie rozpoczęła w
+                            wieku 8 lat w Państwowej Szkole Muzycznej I i II stopnia im. M. Karłowicza w Zielonej Górze.
+                            Studia licencjackie ukończyła w Akademii Muzycznej im. I. J. Paderewskiego w Poznaniu, na
+                            kierunkach kompozycja oraz fortepian. Obecnie jest studentką roku dyplomowego studiów
+                            magisterskich w klasie fortepianu dr. Łukasza Byrdy na poznańskiej uczelni. Młoda artystka
+                            brała udział w wielu konkursach pianistycznych, zdobywając nagrody i wyróżnienia, w tym
+                            m.in. III nagrodę na Międzynarodowym Konkursie Pianistycznym „Chopin plus” w Krakowie (2024)
+                            oraz III nagrodę i Nagrodę Specjalną Rektora AMKL na Międzynarodowym Kłodzkim Konkursie
+                            Pianistycznym (2024). Pianistka występowała w wielu salach koncertowych w Polsce, m.in. w
+                            Akademiach Muzycznych w Poznaniu, Wrocławiu, Katowicach oraz w Auli Florianka w Krakowie.
+                            Wielokrotnie prawykonywała utwory młodych kompozytorów w ramach Ogólnopolskiej Konferencji
+                            Studencko-Doktoranckiej „Neofonia”. W 2024 roku wystąpiła również podczas I Ogólnopolskiego
+                            Festiwalu Pianistycznego im. Zbigniewa Śliwińskiego w Gdańsku.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                <div class="small-class-team">
-                    <img class="image-1" src="slider-images/sobich.jpg" alt="team member" />
-                    <h1 class="h1-team-members">Katarzyna Sobich</h1>
-                </div>
-                <div class="team-text">
-                    <p class="p-team">
-                        Katarzyna Sobich urodziła się 26 lutego 2000 roku. Naukę gry na fortepianie rozpoczęła w
-                        wieku 8 lat w Państwowej Szkole Muzycznej I i II stopnia im. M. Karłowicza w Zielonej Górze.
-                        Studia licencjackie ukończyła w Akademii Muzycznej im. I. J. Paderewskiego w Poznaniu, na
-                        kierunkach kompozycja oraz fortepian. Obecnie jest studentką roku dyplomowego studiów
-                        magisterskich w klasie fortepianu dr. Łukasza Byrdy na poznańskiej uczelni.
 
-                        Młoda artystka brała udział w wielu konkursach pianistycznych, zdobywając nagrody i
-                        wyróżnienia, w tym m.in. III nagrodę na Międzynarodowym Konkursie Pianistycznym „Chopin
-                        plus” w Krakowie (2024) oraz III nagrodę i Nagrodę Specjalną Rektora AMKL na Międzynarodowym
-                        Kłodzkim Konkursie Pianistycznym (2024). Pianistka występowała w wielu salach koncertowych w
-                        Polsce, m.in. w Akademiach Muzycznych w Poznaniu, Wrocławiu, Katowicach oraz w Auli
-                        Florianka w Krakowie. Wielokrotnie prawykonywała utwory młodych kompozytorów w ramach
-                        Ogólnopolskiej Konferencji Studencko-Doktoranckiej „Neofonia”. W 2024 roku wystąpiła również
-                        podczas I Ogólnopolskiego Festiwalu Pianistycznego im. Zbigniewa Śliwińskiego w Gdańsku
-                    </p>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                <div class="small-class-team">
-                    <img class="image-1" src="slider-images/domagala.jpg" alt="team member" />
-                    <h1 class="h1-team-members"> Maciej Domagała</h1>
-                </div>
-                <div class="team-text">
-                    <p class="p-team">
-                        Maciej Domagała, ur. w 2008 r. w Kutnie, jest uczniem Szkoły Muzycznej im. S. Moniuszki w
-                        Gąbinie w klasie fortepianu dr. hab. Jarosława Domagały. W 2024 r. uzyskał stypendium
-                        Narodowego Instytutu Muzyki i Tańca w Warszawie oraz Podkarpackiej Fundacji Rozwoju Kultury.
-
-                        Jest laureatem wielu międzynarodowych konkursów pianistycznych, w tym m.in.: Konkursu
-                        Polskiej i Ukraińskiej Muzyki w Charkowie (2019), International Chopin Piano Competition w
-                        Wiedniu (2021), XXII Międzynarodowego Konkursu im. J. Zarębskiego w Łomiankach-Warszawie
-                        (2022), Międzynarodowego Pianistycznego Konkursu Chopinowskiego w Turznie (2023), IX
-                        Międzynarodowego Konkursu Pianistycznego Online w Trzcianie (2023), International Henryk
-                        Melcer Piano Competition w Kaliszu (2023), International Music Competition w Krakowie
-                        (2023), II International Online Music Competition „Music is Life” Kraków-Wiedeń (2023),
-                        Concurs Internacional De Piano On-Line Chopin Sessions w Felanitx (2023), Międzynarodowego
-                        Konkursu Pianistycznego online „Fenomeny Muzyczne” (2023) oraz London International Chopin
-                        Competition (2024).
-
-                        Maciej koncertował w wielu krajach, takich jak Wielka Brytania, Niemcy, Austria, Czechy,
-                        Węgry, Ukraina i Polska. Występował m.in. w Filharmonii Narodowej, Teatrze Wielkim w
-                        Warszawie, Studio Polskiego Radia im. Władysława Szpilmana w Warszawie, Calisia One, Salonie
-                        Muzycznym – Muzeum F. Nowowiejskiego w Poznaniu, ECA im. F. Chopina w Sannikach, Muzeum
-                        Pałac Herbsta w Łodzi, Auli im. S. Stuligrosza AM w Poznaniu, Parku Ujazdowskim w Warszawie,
-                        Domu Urodzenia Fryderyka Chopina w Żelazowej Woli, Pałacu Romantycznym w Turznie oraz
-                        Europejskim Centrum Muzyki Krzysztofa Pendereckiego w Lusławicach.
-
-                        W 2024 r. był uczestnikiem XIX Międzynarodowego Forum Pianistycznego „Bieszczady bez granic”
-                        w Sanoku, gdzie wystąpił z Lwowską Orkiestrą Kameralną „Akademia”. Uczestniczył również w
-                        Ogólnopolskich Warsztatach Pianistycznych w Krynicy-Zdroju (2019), Kursie „Mistrz i
-                        uczniowie” w Pałacu w Rybnej oraz "Zagraj z Mistrzem" w Gnieźnie, gdzie doskonalił swoją grę
-                        pod okiem wybitnych profesorów, takich jak Elżbieta Tarnawska, Joanna Ławrynowicz-Just,
-                        Beata Bilińska, Piotr Paleczny i Andrzej Tatarski. Brał udział w cyklu edukacyjnym
-                        „Chopinoteka. Warsztaty słuchania” w Domu Urodzenia Fryderyka Chopina w Żelazowej Woli.
-
-                        Maciej wystąpił również na Festiwalu „Chopin en Vacances” w latach 2023 i 2024, a także na X
-                        Międzynarodowym Festiwalu I. J. Paderewskiego oraz XXVI Międzynarodowym Festiwalu
-                        Pianistycznym Floralia Muzyczne – Muzyka w Kwiatach (2022). Jest laureatem II (2022) i III
-                        (2023) edycji Alternatywy Konkursowej Polskiego Radia Chopin w kategoriach Polonez i
-                        Ballada.
-
-                        W 2019 r. uzyskał tytuł Osobowości Roku Redakcji „Polska Times” w kategorii Kultura, a w
-                        2020 r. otrzymał Stypendium Artystyczne Marszałka Województwa Łódzkiego.
-                    </p>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalQi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">Maciej Domagała
+                                - Biografia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            Maciej Domagała, ur. w 2008 r. w Kutnie, jest uczniem Szkoły Muzycznej im. S. Moniuszki w
+                            Gąbinie w klasie fortepianu dr. hab. Jarosława Domagały. W 2024 r. uzyskał stypendium
+                            Narodowego Instytutu Muzyki i Tańca w Warszawie oraz Podkarpackiej Fundacji Rozwoju Kultury.
+                            Jest laureatem wielu międzynarodowych konkursów pianistycznych, w tym m.in.: Konkursu
+                            Polskiej i Ukraińskiej Muzyki w Charkowie (2019), International Chopin Piano Competition w
+                            Wiedniu (2021), XXII Międzynarodowego Konkursu im. J. Zarębskiego w Łomiankach-Warszawie
+                            (2022), Międzynarodowego Pianistycznego Konkursu Chopinowskiego w Turznie (2023), IX
+                            Międzynarodowego Konkursu Pianistycznego Online w Trzcianie (2023), International Henryk
+                            Melcer Piano Competition w Kaliszu (2023), International Music Competition w Krakowie
+                            (2023), II International Online Music Competition „Music is Life” Kraków-Wiedeń (2023),
+                            Concurs Internacional De Piano On-Line Chopin Sessions w Felanitx (2023), Międzynarodowego
+                            Konkursu Pianistycznego online „Fenomeny Muzyczne” (2023) oraz London International Chopin
+                            Competition (2024). Maciej koncertował w wielu krajach, takich jak Wielka Brytania, Niemcy,
+                            Austria, Czechy, Węgry, Ukraina i Polska. Występował m.in. w Filharmonii Narodowej, Teatrze
+                            Wielkim w Warszawie, Studio Polskiego Radia im. Władysława Szpilmana w Warszawie, Calisia
+                            One, Salonie Muzycznym – Muzeum F. Nowowiejskiego w Poznaniu, ECA im. F. Chopina w
+                            Sannikach, Muzeum Pałac Herbsta w Łodzi, Auli im. S. Stuligrosza AM w Poznaniu, Parku
+                            Ujazdowskim w Warszawie, Domu Urodzenia Fryderyka Chopina w Żelazowej Woli, Pałacu
+                            Romantycznym w Turznie oraz Europejskim Centrum Muzyki Krzysztofa Pendereckiego w
+                            Lusławicach. W 2024 r. był uczestnikiem XIX Międzynarodowego Forum Pianistycznego
+                            „Bieszczady bez granic” w Sanoku, gdzie wystąpił z Lwowską Orkiestrą Kameralną „Akademia”.
+                            Uczestniczył również w Ogólnopolskich Warsztatach Pianistycznych w Krynicy-Zdroju (2019),
+                            Kursie „Mistrz i uczniowie” w Pałacu w Rybnej oraz "Zagraj z Mistrzem" w Gnieźnie, gdzie
+                            doskonalił swoją grę pod okiem wybitnych profesorów, takich jak Elżbieta Tarnawska, Joanna
+                            Ławrynowicz-Just, Beata Bilińska, Piotr Paleczny i Andrzej Tatarski. Brał udział w cyklu
+                            edukacyjnym „Chopinoteka. Warsztaty słuchania” w Domu Urodzenia Fryderyka Chopina w
+                            Żelazowej Woli. Maciej wystąpił również na Festiwalu „Chopin en Vacances” w latach 2023 i
+                            2024, a także na X Międzynarodowym Festiwalu I. J. Paderewskiego oraz XXVI Międzynarodowym
+                            Festiwalu Pianistycznym Floralia Muzyczne – Muzyka w Kwiatach (2022). Jest laureatem II
+                            (2022) i III (2023) edycji Alternatywy Konkursowej Polskiego Radia Chopin w kategoriach
+                            Polonez i Ballada. W 2019 r. uzyskał tytuł Osobowości Roku Redakcji „Polska Times” w
+                            kategorii Kultura, a w 2020 r. otrzymał Stypendium Artystyczne Marszałka Województwa
+                            Łódzkiego.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" class="box-1-team">
-                <div class="small-class-team">
-                    <img class="image-1" src="slider-images/brizzi.jpg" alt="team member" />
-                    <h1 class="h1-team-members">Stefano Brizzi</h1>
-                </div>
-                <div class="team-text">
-                    <p class="p-team">
-                        Stefano Brizzi to młody pianista urodzony w Fondi we Włoszech w 2007 roku, który rozpoczął
-                        naukę gry na fortepianie w wieku 7 lat. Jego muzyczna podróż rozpoczęła się pod opieką
-                        Maestro
-                        Luigi Carroccii, a następnie kontynuował ją na zaawansowanych kursach pianistycznych w
-                        Międzynarodowej Akademii Muzyki i Sztuki AIMART w Rzymie, gdzie studiował pod kierunkiem
-                        Maestro Giorgii Alessandry Brustii.
-                        Stefano występował na wielu prestiżowych wydarzeniach muzycznych, takich jak Fondi Music
-                        Festival, Settimane Musicali Internazionali, Międzynarodowe Kursy Interpretacji Muzycznej –
-                        Umbria Classica Association, EuroArts Music Festival & Academy w Szczecinie oraz na
-                        koncertach organizowanych przez Węgierską Akademię w Rzymie.
-                        Od 2018 roku Stefano z sukcesami występuje na międzynarodowych konkursach pianistycznych,
-                        zdobywając liczne nagrody, w tym pierwsze nagrody i grand prix na konkursach organizowanych
-                        w
-                        Rzym, Bolonii, Baronissi, Minerbio i Spoleto. W 2022 roku zdobył I nagrodę w eliminacjach
-                        Konkursu Pianistycznego Steinway dla młodych talentów, co umożliwiło mu udział w włoskim
-                        finale w Weronie, gdzie zdobył specjalną nagrodę "Iancu Tucarman". Rok 2023 okazał
-                        się jeszcze
-                        bardziej udany – Stefano został zwycięzcą Konkursu Pianistycznego im. Henryka Melcera w
-                        Kaliszu oraz zdobył pierwszą nagrodę na Międzynarodowym Konkursie Pianistycznym w Orbetello
-                        - Junior.
 
-                        Pomimo młodego wieku, Stefano występował w licznych prestiżowych salach koncertowych,
-                        koncertując we Włoszech, Austrii, Polsce i Rumunii. Na szczególną uwagę zasługuje jego
-                        współpraca z Włoskim Instytutem Kultury w Bukareszcie, dzięki której Stefano wystąpił w
-                        Filharmonii „George Enescu”, przyciągając uwagę znanych krytyków, takich jak Dumitru
-                        Avakian.
-                        Jego występy zostały pozytywnie ocenione w lokalnej prasie muzycznej, a także były
-                        transmitowane w rumuńskiej telewizji narodowej.
-                    </p>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalFilip" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title text-black text-m-window fs-5" id="exampleModalLabel">Stefano Brizzi
+                                - Biografia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-black">
+                            Stefano Brizzi to młody pianista urodzony w Fondi we Włoszech w 2007 roku, który rozpoczął
+                            naukę gry na fortepianie w wieku 7 lat. Jego muzyczna podróż rozpoczęła się pod opieką
+                            Maestro Luigi Carroccii, a następnie kontynuował ją na zaawansowanych kursach pianistycznych
+                            w Międzynarodowej Akademii Muzyki i Sztuki AIMART w Rzymie, gdzie studiował pod kierunkiem
+                            Maestro Giorgii Alessandry Brustii. Stefano występował na wielu prestiżowych wydarzeniach
+                            muzycznych, takich jak Fondi Music Festival, Settimane Musicali Internazionali,
+                            Międzynarodowe Kursy Interpretacji Muzycznej – Umbria Classica Association, EuroArts Music
+                            Festival & Academy w Szczecinie oraz na koncertach organizowanych przez Węgierską Akademię w
+                            Rzymie. Od 2018 roku Stefano z sukcesami występuje na międzynarodowych konkursach
+                            pianistycznych, zdobywając liczne nagrody, w tym pierwsze nagrody i grand prix na konkursach
+                            organizowanych w Rzym, Bolonii, Baronissi, Minerbio i Spoleto. W 2022 roku zdobył I nagrodę
+                            w eliminacjach Konkursu Pianistycznego Steinway dla młodych talentów, co umożliwiło mu
+                            udział w włoskim finale w Weronie, gdzie zdobył specjalną nagrodę "Iancu Tucarman". Rok 2023
+                            okazał się jeszcze bardziej udany – Stefano został zwycięzcą Konkursu Pianistycznego im.
+                            Henryka Melcera w Kaliszu oraz zdobył pierwszą nagrodę na Międzynarodowym Konkursie
+                            Pianistycznym w Orbetello - Junior. Pomimo młodego wieku, Stefano występował w licznych
+                            prestiżowych salach koncertowych, koncertując we Włoszech, Austrii, Polsce i Rumunii. Na
+                            szczególną uwagę zasługuje jego współpraca z Włoskim Instytutem Kultury w Bukareszcie,
+                            dzięki której Stefano wystąpił w Filharmonii „George Enescu”, przyciągając uwagę znanych
+                            krytyków, takich jak Dumitru Avakian. Jego występy zostały pozytywnie ocenione w lokalnej
+                            prasie muzycznej, a także były transmitowane w rumuńskiej telewizji narodowej.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
 
 
 
         </div>
-        </div>
-
-
-
 
 
 
         <!--/ FOOTER SECTION-->
-
         <section id="footer" class="footer-wrapper text-center">
             <div class="container">
-                <div class="title text-center" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="title text-center">
                     <div class="aligncenter">
                         <div class="socialFooter">
                             <a href="https://m.facebook.com/100084549096550/" target="_blank"><i
@@ -417,14 +497,13 @@
                 </div>
         </section>
         <script src="js/about.js"></script>
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
         <script>
-
             AOS.init();
-
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
