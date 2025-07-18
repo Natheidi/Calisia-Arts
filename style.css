@@ -335,6 +335,10 @@ a.download-button:hover {
 		display: none;
 	}
 
+	.margin-bez2{
+    height: 100px!important;
+}
+
 	.hamburger-list-div.visible {
 		display: block;
 	}
