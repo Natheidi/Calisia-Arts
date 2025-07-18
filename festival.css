@@ -558,6 +558,10 @@ ul {
     height: 100px!important;
 }
 
+.margin-bez3{
+height: 200px!important;
+}
+
 .card2{
     padding: 10px 5px;
 }
@@ -665,6 +669,13 @@ ul {
     .konkursbox{
         height: 800px;
     }
+        .margin-bez3{
+height: 10px!important;
+}
+
+ .main3{
+        height: 300px!important ;
+    }
     
 }
 
@@ -692,12 +703,16 @@ ul {
 
     }
 
+    .margin-bez3{
+height: 10px!important;
+}
+
     .main2{
         height: 300px;
     }
 
     .main3{
-        height: 400px!important ;
+        height: 200px!important ;
     }
     
     .deadline{

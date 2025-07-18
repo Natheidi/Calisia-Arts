@@ -665,6 +665,9 @@ ul {
     .konkursbox{
         height: 800px;
     }
+       .main3{
+        height: 300px!important ;
+    }
     
 }
 
@@ -697,7 +700,7 @@ ul {
     }
 
     .main3{
-        height: 400px!important ;
+        height: 200px!important ;
     }
     
     .deadline{
