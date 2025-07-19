@@ -696,6 +696,11 @@ ul {
         margin-bottom: 30px;
     }
 
+     .main-festiwal-new-new{
+        margin-bottom: 20px!important;
+    }
+
+
 
     .main-festiwal {
         flex-direction: column;
@@ -722,7 +727,7 @@ ul {
     }
 
     .container-text-photos2 {
-        margin-top: 230px;
+      
     }
 
     .program-mobile {
