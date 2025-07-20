@@ -689,10 +689,14 @@ ul {
         /* Ustawienie kafelków jeden pod drugim */
         gap: 20px;
         align-items: center;
-        margin-bottom: 130px;
+        margin-bottom: 60px;
         height: 200px;
         justify-content: flex-start;
 
+    }
+
+    .margin-special-group{
+        margin-bottom: 130px!important;
     }
  
 
