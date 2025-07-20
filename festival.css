@@ -676,6 +676,11 @@ ul {
         height: 300px !important;
     }
 
+    .padding-artysci {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -696,8 +701,8 @@ ul {
         margin-bottom: 30px;
     }
 
-     .main-festiwal-new-new{
-        margin-bottom: 20px!important;
+    .main-festiwal-new-new {
+        margin-bottom: 20px !important;
     }
 
 
@@ -707,10 +712,14 @@ ul {
         /* Ustawienie kafelków jeden pod drugim */
         gap: 20px;
         align-items: center;
-        margin-bottom: 30px !important;
-        height: 400px !important;
+        margin-bottom: 10px !important;
+        height: 400px;
         justify-content: flex-start;
 
+    }
+
+    .festiwale-dol{
+        height: 300px !important;
     }
 
     .margin-bez3 {
@@ -726,9 +735,7 @@ ul {
         margin-top: 120px;
     }
 
-    .container-text-photos2 {
-      
-    }
+    .container-text-photos2 {}
 
     .program-mobile {
         font-size: 13px;

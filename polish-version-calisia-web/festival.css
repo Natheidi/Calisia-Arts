@@ -668,6 +668,11 @@ ul {
        .main4{
         height: 300px!important ;
     }
+
+    .padding-artysci{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
     
 }
 
