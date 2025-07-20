@@ -689,14 +689,12 @@ ul {
         /* Ustawienie kafelków jeden pod drugim */
         gap: 20px;
         align-items: center;
-        margin-bottom: 60px;
+        margin-bottom: 130px;
         height: 200px;
         justify-content: flex-start;
 
     }
-    .main-festiwal-new-new{
-        margin-bottom: 20px!important;
-    }
+ 
 
     .main2{
         height: 300px;
