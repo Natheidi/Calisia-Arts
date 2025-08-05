@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio, Foundation, Calisia-Arts, Calisia, Arts, Piano, Music, Competition" />
-
     <title>Calisia-Arts</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -19,12 +18,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main Stylesheet CSS -->
-    <link rel="stylesheet" href="style.css?id=9">
+    <link rel="stylesheet" href="festival.css?id=8">
+    <link rel="stylesheet" href="rules.css?id=8">
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 </head>
 
 <body>
+
+
     <header class="header">
         <div id="home">
             <div class="container">
@@ -33,15 +35,16 @@
                         <a href="index.html"><img class="logo-calisia" src="slider-images/calisia-format.png"
                                 alt="logo, gold letters, calisia arts" /></a>
                         <ul class="nav navbar-nav">
-                            <li class="active"><a data-scroll href="index.html" class="int-collapse-menu">Home</a></li>
+                            <li><a data-scroll href="index.html" class="int-collapse-menu">Home</a></li>
                             <li><a data-scroll href="about.html" class="int-collapse-menu">About</a>
                             </li>
                             <li><a data-scroll href="team.html" class="int-collapse-menu">Team</a></li>
                             <li><a data-scroll href="contact.html" class="int-collapse-menu">Contact</a>
                             </li>
                             <li><a data-scroll href="konkurs24.html" class="int-collapse-menu">Competition</a></li>
-                            <li><a data-scroll href="festival.html" class="int-collapse-menu">Festival</a></li>
-                           
+                            <li class="active"><a data-scroll href="festival.html"
+                                    class="int-collapse-menu">Festival</a></li>
+                            </li>
 
                         </ul>
                         <div class="languages">
@@ -69,7 +72,7 @@
                                     class="int-collapse-menu">Contact</a></li>
                             <li><a data-scroll href="konkurs24.html" class="int-collapse-menu">Competition</a></li>
                             <li><a data-scroll href="festival.html" class="int-collapse-menu">Festival</a></li>
-                   
+
                         </ul>
                         <div class="languages-2">
                             <a href="polish-version-calisia-web/indexpl.html"><img class="img-flag"
@@ -86,39 +89,42 @@
         </div>
 
     </header>
+    <section class="contact">
+        <div class="team-h">
+            <h1 class="h1-team">2nd Kalisz Piano Festival</h1>
+        </div>
+        <div class="main-festiwal margin-bez">
+            <a href="program25.html" class="card">
+                Program
+            </a>
+            <a href="artysci25.html" class="card">
+                Artists
+            </a>
+            <!--<a href="foto-festival25.html" class="card card2">
+                    Photo gallery
+                </a> -->
 
-    <section id="home">
-        <div class="home-image">
+        </div>
 
-            <div class="home-content">
 
-                <img data-aos="fade-up" data-aos-duration="1000" class="img-logo-competition"
-                    src="slider-images/b.png" />
+        <div class="container-text-photos">
+            <div class="text-container">
+                <p class="text-application width-form">
+                    The 2nd Kalisz Piano Festival is going to take place on 09-12 September 2025
+                    the Henryk Melcer State Music School (First and Second Degree) in Kalisz.
 
-                <!--
-            <div class="tp-caption rev-video2 customin customout start">
-           
-                <div class="tp-caption rev-video customin customout start">
-                    <div class="h2-index-box">
-                        <h2 class="h2-index" data-aos="zoom-in" data-aos-duration="1500"> I Kalisz
-                            <br> Piano Festival<br> 21.-23.10.2024
-                    </div>
-                    
+                    <br><br>
 
             </div>
-     -->
-
-
-
-            </div>
-        </div>
-        </div>
     </section>
 
+
+
     <!--/ FOOTER SECTION-->
+
     <section id="footer" class="footer-wrapper text-center">
-        <div  class="container">
-            <div class="title text-center">
+        <div class="container">
+            <div class="title text-center" data-scroll-reveal="enter from the bottom after 0.5s">
                 <div class="aligncenter">
                     <div class="socialFooter">
                         <a href="https://m.facebook.com/100084549096550/" target="_blank"><i
@@ -127,93 +133,19 @@
                                 class="fa fa-instagram"></i></a>
                     </div>
                     <p><span class="footer-s-1">&copy; 2025</span><span class="footer-span"> Calisia Arts
-                        Foundation</span></p>
+                            Foundation</span></p>
                 </div>
             </div>
-        </div>
     </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="js/about.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/jquery.jigowatt.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.unveilEffects.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-        (function ($) {
-            var $container = $('.masonry_wrapper'),
-                colWidth = function () {
-                    var w = $container.width(),
-                        columnNum = 1,
-                        columnWidth = 0;
-                    if (w > 1200) {
-                        columnNum = 3;
-                    } else if (w > 900) {
-                        columnNum = 3;
-                    } else if (w > 600) {
-                        columnNum = 2;
-                    } else if (w > 300) {
-                        columnNum = 1;
-                    }
-                    columnWidth = Math.floor(w / columnNum);
-                    $container.find('.item').each(function () {
-                        var $item = $(this),
-                            multiplier_w = $item.attr('class').match(/item-w(\d)/),
-                            multiplier_h = $item.attr('class').match(/item-h(\d)/),
-                            width = multiplier_w ? columnWidth * multiplier_w[1] - 4 : columnWidth - 4,
-                            height = multiplier_h ? columnWidth * multiplier_h[1] * 0.5 - 4 : columnWidth *
-                                0.5 - 4;
-                        $item.css({
-                            width: width,
-                            height: height
-                        });
-                    });
-                    return columnWidth;
-                }
 
-            function refreshWaypoints() {
-                setTimeout(function () { }, 1000);
-            }
+        AOS.init();
 
-            $('nav.portfolio-filter ul li a').on('click', function () {
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector
-                }, refreshWaypoints());
-                $('nav.portfolio-filter ul li a').removeClass('active');
-                $(this).addClass('active');
-                return false;
-            });
-
-            function setPortfolio() {
-                setColumns();
-                $container.isotope('reLayout');
-            }
-
-            isotope = function () {
-                $container.isotope({
-                    resizable: true,
-                    itemSelector: '.item',
-                    masonry: {
-                        columnWidth: colWidth(),
-                        gutterWidth: 0
-                    }
-                });
-            };
-            isotope();
-            $(window).smartresize(isotope);
-        }(jQuery));
-
-
-        
     </script>
-
-
 </body>
 
 </html>
