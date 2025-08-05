@@ -180,7 +180,7 @@ body {
     font-size: 17px;
 }
 .bank-account-letters{
-    color: #a48044;
+    color: #a48044!important;
 }
 .inside-form-1 {
     margin-top: 25px;
