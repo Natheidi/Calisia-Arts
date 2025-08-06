@@ -492,9 +492,10 @@ ul {
     justify-content: center;
 }
 .margin-korekta{
-      height: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .kafelek-main {
