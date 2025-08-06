@@ -485,6 +485,12 @@ ul {
     justify-content: center;
 }
 
+.main-festiwal-korekta {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
 .kafelek-main {
     display: flex;
     align-items: center;
@@ -696,6 +702,16 @@ ul {
         align-items: center;
         margin-bottom: 60px;
         height: 200px;
+        justify-content: flex-start;
+
+    }
+
+    .main-festiwal-korekta {
+        flex-direction: column;
+        /* Ustawienie kafelków jeden pod drugim */
+        align-items: center;
+        margin-bottom: 60px;
+        height: 210px;
         justify-content: flex-start;
 
     }
