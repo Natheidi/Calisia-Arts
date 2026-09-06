@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="jury.css">
     <link rel="stylesheet" href="festival.css">
     <script src="https://kit.fontawesome.com/320464dc8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ui-polish.css?id=14">
 </head>
 
 <body>
@@ -71,9 +72,16 @@
     </header>
 
     <main class="team-container">
+            <nav class="festival-back-navigation" aria-label="Back navigation">
+                <a class="festival-back-link" href="festival26.html" aria-label="Back"><span class="festival-back-icon" aria-hidden="true">&#8592;</span><span>Back</span></a>
+            </nav>
         <div class="jury-box">
             <div class="team-h">
                 <h1 class="h1-team">Artists</h1>
+            </div>
+
+            <div class="main-festiwal margin-bez2">
+                <a href="program26.html" class="card card2">Program</a>
             </div>
 
             <img class="jury-img mb-5" src="slider-images/zofia-anna-olesik-2026.webp"
@@ -129,6 +137,13 @@
             <div class="label-photo">Aleksandra Martinoska</div>
             <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
                 data-bs-target="#aleksandraModal">Biography</button>
+            <div class="line"></div>
+
+            <img class="jury-img mb-5" src="slider-images/filip-pinczewski-2026.webp" alt="Filip Pinczewski"
+                loading="lazy">
+            <div class="label-photo">Filip Pinczewski</div>
+            <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#filipModal">Biography</button>
             <div class="line"></div>
         </div>
     </main>
@@ -479,6 +494,42 @@
                         scholarship holder of the Polish Children's Fund.</p>
                     <p>Since 2014, Aleksandra Martinoska has been a member of the first violin section of the
                         Tonkünstler-Orchester Niederösterreich.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filipModal" tabindex="-1" aria-labelledby="filipModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-black text-m-window fs-5" id="filipModalLabel">Filip Pinczewski -
+                        Biography</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-black">
+                    <p>Filip Pinczewski is a pianist, composer, and teacher, born in Kalisz in 1993. He graduated from
+                        the Jadwiga Kaliszewska General Music School in Poznań, where he studied piano with Prof.
+                        Waldemar Andrzejewski, and from the University of Music and Performing Arts Vienna, where he
+                        studied piano with Prof. Manfred Wagner-Artzt as well as composition and music theory.</p>
+                    <p>As a pianist, he performs as a soloist and chamber musician, with a particular interest in
+                        contemporary music. He has given concerts and had his works performed in many European
+                        countries, including Poland, Austria, Germany, Italy, Norway, Iceland, Malta, Latvia, Hungary,
+                        and Switzerland. His performing activity combines the classical solo and chamber piano
+                        repertoire with contemporary music and includes world premieres. As a performer of
+                        contemporary music, he has appeared at the Wien Modern festival and the Mauricio Kagel
+                        International Composition Competition in Vienna.</p>
+                    <p>He combines his artistic career with teaching and academic work. He is a piano teacher and
+                        accompanist at the Regionalmusikschule Kreuzenstein and a lecturer and doctoral candidate at
+                        the Department of Music Education Research and Practice at the University of Music and
+                        Performing Arts Vienna.</p>
+                    <p>He is a co-founder of the Calisia Arts Foundation and co-initiator of the concert series Let's
+                        Open Up to New Music and Student Musical Quarters. A prizewinner at piano and composition
+                        competitions, he is also a two-time scholarship holder of the Piotr Kler Foundation, whose
+                        support enabled him to record a solo album devoted to the music of Johann Sebastian Bach.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

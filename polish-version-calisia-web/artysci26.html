@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="jury.css">
     <link rel="stylesheet" href="festival.css">
     <script src="https://kit.fontawesome.com/320464dc8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../ui-polish.css?id=14">
 </head>
 
 <body>
@@ -71,9 +72,16 @@
     </header>
 
     <main class="team-container">
+            <nav class="festival-back-navigation" aria-label="Nawigacja powrotna">
+                <a class="festival-back-link" href="festiwal26.html" aria-label="Wstecz"><span class="festival-back-icon" aria-hidden="true">&#8592;</span><span>Wstecz</span></a>
+            </nav>
         <div class="jury-box">
             <div class="team-h">
                 <h1 class="h1-team">Artyści</h1>
+            </div>
+
+            <div class="main-festiwal margin-bez2">
+                <a href="program26.html" class="card card2">Program</a>
             </div>
 
             <img class="jury-img mb-5" src="../slider-images/zofia-anna-olesik-2026.webp"
@@ -130,6 +138,13 @@
             <div class="label-photo">Aleksandra Martinoska</div>
             <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
                 data-bs-target="#aleksandraModal">Biografia</button>
+            <div class="line"></div>
+
+            <img class="jury-img mb-5" src="../slider-images/filip-pinczewski-2026.webp" alt="Filip Pinczewski"
+                loading="lazy">
+            <div class="label-photo">Filip Pinczewski</div>
+            <button type="button" class="mb-5 btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#filipModal">Biografia</button>
             <div class="line"></div>
         </div>
     </main>
@@ -485,6 +500,42 @@
                         stypendystką Krajowego Funduszu na rzecz Dzieci.</p>
                     <p>Od 2014 roku Aleksandra Martinoska jest członkinią grupy pierwszych skrzypiec
                         Tonkünstler-Orchester Niederösterreich.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filipModal" tabindex="-1" aria-labelledby="filipModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-black text-m-window fs-5" id="filipModalLabel">Filip Pinczewski -
+                        biografia</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                </div>
+                <div class="modal-body text-black">
+                    <p>Filip Pinczewski jest pianistą, kompozytorem i pedagogiem, urodzonym w 1993 roku w Kaliszu.
+                        Jest absolwentem Poznańskiej Ogólnokształcącej Szkoły Muzycznej im. Jadwigi Kaliszewskiej w
+                        klasie fortepianu prof. Waldemara Andrzejewskiego oraz Universität für Musik und darstellende
+                        Kunst Wien, gdzie studiował fortepian pod kierunkiem prof. Manfreda Wagner-Artzta, a także
+                        kompozycję i teorię muzyki.</p>
+                    <p>Jako pianista prowadzi działalność solistyczną i kameralną, ze szczególnym zainteresowaniem
+                        muzyką współczesną. Koncertował i miał wykonania w wielu krajach Europy, m.in. w Polsce,
+                        Austrii, Niemczech, Włoszech, Norwegii, Islandii, na Malcie, Łotwie, Węgrzech i w Szwajcarii.
+                        W swojej działalności wykonawczej łączy klasyczny repertuar fortepianowy i kameralny z muzyką
+                        współczesną, dokonując także prawykonań utworów. Jako wykonawca muzyki współczesnej występował
+                        m.in. podczas festiwalu Wien Modern oraz Międzynarodowego Konkursu Kompozytorskiego im.
+                        Mauricio Kagela w Wiedniu.</p>
+                    <p>Działalność artystyczną łączy z pracą pedagogiczną i akademicką. Jest nauczycielem fortepianu i
+                        akompaniatorem w Regionalmusikschule Kreuzenstein oraz wykładowcą i doktorantem w Institut für
+                        musikpädagogische Forschung und Praxis na Wiedeńskim Uniwersytecie Muzycznym.</p>
+                    <p>Jest współzałożycielem Fundacji Calisia Arts i współinicjatorem cykli koncertowych „Otwórzmy się
+                        na muzykę nową” oraz „Studenckie Kwadranse Muzyczne”. Jest laureatem konkursów pianistycznych i
+                        kompozytorskich oraz dwukrotnym stypendystą Fundacji Piotra Klera, dzięki której wsparciu nagrał
+                        solową płytę poświęconą twórczości Johanna Sebastiana Bacha.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>

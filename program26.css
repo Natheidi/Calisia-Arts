@@ -1,0 +1,135 @@
+.festival-program {
+    padding-bottom: 80px;
+}
+
+.program-links {
+    height: auto;
+    min-height: 100px;
+    margin-bottom: 22px;
+}
+
+.program-intro {
+    max-width: 760px;
+    margin: 0 auto 34px;
+    padding: 0 24px;
+    color: #d8d8d8;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.program-list {
+    display: grid;
+    gap: 24px;
+    width: min(920px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.program-event {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    overflow: hidden;
+    border: 1px solid rgba(164, 128, 68, 0.6);
+    border-radius: 12px;
+    background: #151515;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.program-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 210px;
+    padding: 28px 24px;
+    background: linear-gradient(145deg, #a48044, #6f542c);
+    color: #fff;
+    text-align: center;
+}
+
+.program-date-day {
+    font-family: "Oswald", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.program-date-month {
+    margin-top: 9px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.program-date-year {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.program-details {
+    padding: 28px 32px 30px;
+}
+
+.program-details h2 {
+    margin: 0 0 22px;
+    color: #d4b073;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.program-meta {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    gap: 6px 10px;
+    margin-top: 14px;
+    color: #e2e2e2;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.program-meta i {
+    margin-top: 5px;
+    color: #a48044;
+    text-align: center;
+}
+
+.program-meta-label {
+    display: block;
+    margin-bottom: 2px;
+    color: #a48044;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.program-meta p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .program-event {
+        grid-template-columns: 1fr;
+    }
+
+    .program-date {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .program-date-day {
+        font-size: 36px;
+    }
+
+    .program-details {
+        padding: 24px 22px 28px;
+    }
+
+    .program-details h2 {
+        font-size: 24px;
+    }
+}

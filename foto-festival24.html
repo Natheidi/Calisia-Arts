@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,26 +16,22 @@
     <!-- end awesome icons -->
     <script src="https://kit.fontawesome.com/320464dc8f.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main Stylesheet CSS -->
+<!-- Main Stylesheet CSS -->
     <link rel="stylesheet" href="foto.css">
     <link rel="stylesheet" href="rules.css">
     <link rel="stylesheet" href="festival.css">
 
     
-    <link rel="stylesheet" href="../polish-version-calisia-web/foto.css">
-    <link rel="stylesheet" href="../polish-version-calisia-web/rules.css">
-    <link rel="stylesheet" href="../polish-version-calisia-web/festival.css">
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="foto.css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
         integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ui-polish.css?id=14">
 </head>
 
-<body>
+<body class="festival-photo-page">
  <header class="header">
             <div id="home">
                 <div class="container">
@@ -53,8 +49,6 @@
                                 <li ><a data-scroll href="konkurs24.html"
                                         class="int-collapse-menu">Competition</a></li>
                                 <li class="active"><a data-scroll href="festival.html" class="int-collapse-menu">Festival</a></li>
-                                </li>
-                            
                             </ul>
                             <div class="languages">
                                 <a href="polish-version-calisia-web/indexpl.html"><img class="img-flag"
@@ -100,6 +94,9 @@
         </header>
 
     <div class="container">
+            <nav class="festival-back-navigation" aria-label="Back navigation">
+                <a class="festival-back-link" href="festiwal24.html" aria-label="Back"><span class="festival-back-icon" aria-hidden="true">&#8592;</span><span>Back</span></a>
+            </nav>
         <div class="team-h">
             <h1 class="h1-team">Photo gallery</h1>
         </div>
@@ -159,38 +156,33 @@
                 <p>Piano masterclasses with Prof. Zbigniew Raubo</p>
             </a>
         </div>
-        <section id="footer" class="footer-wrapper text-center">
-            <div class="container">
-                <div class="title text-center" data-scroll-reveal="enter from the bottom after 0.5s">
-                    <div class="aligncenter">
-                        <div class="socialFooter">
-                            <a href="https://m.facebook.com/100084549096550/" target="_blank"><i
-                                    class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/calisia_arts_foundation/" target="_blank"><i
-                                    class="fa fa-instagram"></i></a>
-                        </div>
-                        <p><span class="footer-s-1">&copy; 2025</span><span class="footer-span"> Calisia Arts
-                                Foundation</span></p>
+    </div>
+    <section id="footer" class="footer-wrapper text-center">
+        <div class="container">
+            <div class="title text-center" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="aligncenter">
+                    <div class="socialFooter">
+                        <a href="https://m.facebook.com/100084549096550/" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/calisia_arts_foundation/" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
                     </div>
+                    <p><span class="footer-s-1">&copy; 2026</span><span class="footer-span"> Calisia Arts
+                            Foundation</span></p>
                 </div>
-        </section>
+            </div>
+        </div>
+    </section>
 
-
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"
-    integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="js/about.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-
-    lightGallery(document.querySelector('.lightgallery'));
-    AOS.init();
-
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"
+        integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/about.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lightGallery(document.querySelector('.lightgallery'));
+        AOS.init();
+    </script>
 </body>
 
 </html>
