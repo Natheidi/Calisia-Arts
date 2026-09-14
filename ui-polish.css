@@ -616,6 +616,27 @@ button:focus-visible,
 }
 
 /* Lightweight homepage icons: avoids loading an external icon runtime. */
+.homepage-2026 .socialFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.homepage-2026 .socialFooter a {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-2026 .socialFooter .fa {
+    margin: 0;
+    vertical-align: middle;
+}
+
 .homepage-2026 .fa-solid.fa-bars {
     position: relative;
     display: block;
@@ -635,20 +656,56 @@ button:focus-visible,
     content: "";
 }
 
+.homepage-2026 .hamburger {
+    min-width: 48px;
+    min-height: 44px;
+    padding: 12px !important;
+    align-items: center;
+    justify-content: center;
+}
+
 .homepage-2026 .fa-facebook::before {
+    display: block;
     font-family: Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
+    line-height: 1;
     content: "f";
 }
 
+.homepage-2026 .fa-instagram {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
 .homepage-2026 .fa-instagram::before {
-    font-family: Arial, sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    content: "◎";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    content: "";
+    transform: translate(-50%, -50%);
+}
+
+.homepage-2026 .fa-instagram::after {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: currentColor;
+    content: "";
 }
 
 .home-festival-circle {
