@@ -151,12 +151,22 @@
     line-height: 1.55;
 }
 
-.program-work h4 span {
+.program-work h4 > span:not(.composer-separator) {
     display: block;
     margin-top: 2px;
     color: #f1f1f1;
     font-weight: 500;
     font-style: normal;
+}
+
+.composer-separator {
+    display: inline-block;
+    width: 1px;
+    height: 1.25em;
+    margin: 0 0.55em;
+    background: currentColor;
+    opacity: 0.7;
+    vertical-align: -0.25em;
 }
 
 .program-work h4 em {
