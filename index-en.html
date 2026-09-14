@@ -10,18 +10,17 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- end Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,500,600,700,800,300' rel='stylesheet'
-        type='text/css'>
     <!-- end awesome icons -->
-    <script src="https://kit.fontawesome.com/320464dc8f.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700;800&amp;family=Raleway:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/PerandorySemiCondensed.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="slider-images/bg.webp" as="image" type="image/webp" media="(max-width: 1500px)">
+    <link rel="preload" href="slider-images/bg2.webp" as="image" type="image/webp" media="(min-width: 1501px)">
 <!-- Main Stylesheet CSS -->
-    <link rel="stylesheet" href="style.css?id=9">
+    <link rel="stylesheet" href="style.css?id=10">
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-    <link rel="stylesheet" href="ui-polish.css?id=18">
+    <link rel="stylesheet" href="ui-polish.css?id=20">
 </head>
 
 <body class="homepage-2026">
@@ -31,7 +30,7 @@
                 <div class="navbar navbar-default" role="navigation">
                     <div class="navbar-collapse">
                         <a href="polish-version-calisia-web/indexpl.html"><img class="logo-calisia" src="slider-images/calisia-format.png"
-                                alt="logo, gold letters, calisia arts" /></a>
+                                alt="logo, gold letters, calisia arts" decoding="async" loading="eager" fetchpriority="high" /></a>
                         <ul class="nav navbar-nav">
                             <li class="active"><a data-scroll href="index-en.html" class="int-collapse-menu">Home</a></li>
                             <li><a data-scroll href="about.html" class="int-collapse-menu">About</a>
@@ -46,11 +45,11 @@
                         </ul>
                         <div class="languages">
                             <a href="polish-version-calisia-web/indexpl.html"><img class="img-flag"
-                                    src="slider-images/icons8-poland-48.png" /></a>
+                                    src="slider-images/icons8-poland-48.png" decoding="async" /></a>
                             <a href="index-en.html"><img class="img-flag"
-                                    src="slider-images/icons8-great-britain-48.png" /></a>
+                                    src="slider-images/icons8-great-britain-48.png" decoding="async" /></a>
                             <a href="chinese-version/index-chinese.html"><img class="img-flag"
-                                    src="slider-images/icons8-china-48.png" /></a>
+                                    src="slider-images/icons8-china-48.png" decoding="async" /></a>
                         </div>
                         <button class="hamburger">
                             <i class="fa-solid fa-bars"></i>
@@ -73,11 +72,11 @@
                         </ul>
                         <div class="languages-2">
                             <a href="polish-version-calisia-web/indexpl.html"><img class="img-flag"
-                                    src="slider-images/icons8-poland-48.png" /></a>
+                                    src="slider-images/icons8-poland-48.png" decoding="async" /></a>
                             <a href="index-en.html"><img class="img-flag"
-                                    src="slider-images/icons8-great-britain-48.png" /></a>
+                                    src="slider-images/icons8-great-britain-48.png" decoding="async" /></a>
                             <a href="chinese-version/index-chinese.html"><img class="img-flag"
-                                    src="slider-images/icons8-china-48.png" /></a>
+                                    src="slider-images/icons8-china-48.png" decoding="async" /></a>
                         </div>
 
                     </div>
@@ -92,10 +91,10 @@
 
             <div class="home-content">
 
-                <div class="home-festival-poster" data-aos="fade-up" data-aos-duration="1000">
+                <div class="home-festival-poster">
                     <div class="home-festival-circle">
                         <img class="home-festival-mark" src="slider-images/festival-mark-2026.svg"
-                            alt="Kalisz Piano Festival symbol" />
+                            alt="Kalisz Piano Festival symbol" decoding="async" loading="eager" fetchpriority="high" />
                         <h1 class="home-festival-title">
                             <span><span class="home-festival-edition">3<sup>rd</sup></span> KALISZ</span>
                             <span>PIANO</span>
@@ -142,86 +141,7 @@
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/about.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/jquery.jigowatt.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.unveilEffects.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script>
-        (function ($) {
-            var $container = $('.masonry_wrapper'),
-                colWidth = function () {
-                    var w = $container.width(),
-                        columnNum = 1,
-                        columnWidth = 0;
-                    if (w > 1200) {
-                        columnNum = 3;
-                    } else if (w > 900) {
-                        columnNum = 3;
-                    } else if (w > 600) {
-                        columnNum = 2;
-                    } else if (w > 300) {
-                        columnNum = 1;
-                    }
-                    columnWidth = Math.floor(w / columnNum);
-                    $container.find('.item').each(function () {
-                        var $item = $(this),
-                            multiplier_w = $item.attr('class').match(/item-w(\d)/),
-                            multiplier_h = $item.attr('class').match(/item-h(\d)/),
-                            width = multiplier_w ? columnWidth * multiplier_w[1] - 4 : columnWidth - 4,
-                            height = multiplier_h ? columnWidth * multiplier_h[1] * 0.5 - 4 : columnWidth *
-                                0.5 - 4;
-                        $item.css({
-                            width: width,
-                            height: height
-                        });
-                    });
-                    return columnWidth;
-                }
-
-            function refreshWaypoints() {
-                setTimeout(function () { }, 1000);
-            }
-
-            $('nav.portfolio-filter ul li a').on('click', function () {
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector
-                }, refreshWaypoints());
-                $('nav.portfolio-filter ul li a').removeClass('active');
-                $(this).addClass('active');
-                return false;
-            });
-
-            function setPortfolio() {
-                setColumns();
-                $container.isotope('reLayout');
-            }
-
-            isotope = function () {
-                $container.isotope({
-                    resizable: true,
-                    itemSelector: '.item',
-                    masonry: {
-                        columnWidth: colWidth(),
-                        gutterWidth: 0
-                    }
-                });
-            };
-            isotope();
-            $(window).smartresize(isotope);
-        }(jQuery));
-
-
-        
-    </script>
+    <script defer src="js/about.js"></script>
 
 
 </body>

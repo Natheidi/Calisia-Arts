@@ -594,6 +594,61 @@ button:focus-visible,
     align-items: center;
     color: #fff;
     text-align: center;
+    animation: festival-poster-enter 650ms ease-out both;
+}
+
+@keyframes festival-poster-enter {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-festival-poster {
+        animation: none;
+    }
+}
+
+/* Lightweight homepage icons: avoids loading an external icon runtime. */
+.homepage-2026 .fa-solid.fa-bars {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 16px;
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+}
+
+.homepage-2026 .fa-solid.fa-bars::after {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: currentColor;
+    content: "";
+}
+
+.homepage-2026 .fa-facebook::before {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    content: "f";
+}
+
+.homepage-2026 .fa-instagram::before {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    content: "◎";
 }
 
 .home-festival-circle {

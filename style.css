@@ -140,7 +140,7 @@ body {
 }
 
 .home-image {
-	background-image: url('slider-images/bg2.jpg');
+	background-image: url('slider-images/bg2.webp');
 	background-size: cover;
 	height: 800px;
 	display: flex;
@@ -226,7 +226,7 @@ a.download-button:hover {
 @media (max-width: 1500px) {
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -244,7 +244,7 @@ a.download-button:hover {
 @media (max-width: 1500px) {
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -262,7 +262,7 @@ a.download-button:hover {
 @media (max-width: 1295px) {
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -279,7 +279,7 @@ a.download-button:hover {
 @media (max-width: 1205px) {
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -296,7 +296,7 @@ a.download-button:hover {
 @media (max-width: 1155px) {
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -381,7 +381,7 @@ a.download-button:hover {
 	}
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
@@ -397,7 +397,7 @@ a.download-button:hover {
 
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 	
 		display: flex;
@@ -412,7 +412,7 @@ a.download-button:hover {
 
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 	
 		display: flex;
@@ -452,7 +452,7 @@ a.download-button:hover {
 	}
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 	
 		display: flex;
@@ -501,7 +501,7 @@ a.download-button:hover {
 	}
 
 	.home-image {
-		background-image: url('slider-images/bg.jpg');
+		background-image: url('slider-images/bg.webp');
 		background-size: cover;
 		height: 800px;
 		display: flex;
