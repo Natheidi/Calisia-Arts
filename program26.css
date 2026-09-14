@@ -13,7 +13,7 @@
     margin: 0 auto 34px;
     padding: 0 24px;
     color: #d8d8d8;
-    font-size: 17px;
+    font-size: 21px;
     line-height: 1.7;
     text-align: center;
 }
@@ -64,7 +64,7 @@
 
 .program-date-year {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 1px;
     opacity: 0.9;
 }
@@ -145,8 +145,8 @@
     margin: 0;
     color: #c49a54;
     font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     font-style: italic;
     line-height: 1.45;
 }
@@ -155,8 +155,8 @@
     display: block;
     margin-top: 4px;
     color: #fff;
-    font-size: 18px;
-    font-weight: 650;
+    font-size: 20px;
+    font-weight: 700;
     font-style: normal;
     line-height: 1.45;
 }
@@ -248,11 +248,11 @@
     }
 
     .program-work h4 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .program-work h4 > span:not(.composer-separator) {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .program-movements {
