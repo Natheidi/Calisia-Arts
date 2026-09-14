@@ -145,18 +145,20 @@
     margin: 0;
     color: #c49a54;
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     font-style: italic;
-    line-height: 1.55;
+    line-height: 1.45;
 }
 
 .program-work h4 > span:not(.composer-separator) {
     display: block;
-    margin-top: 2px;
-    color: #f1f1f1;
-    font-weight: 500;
+    margin-top: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 650;
     font-style: normal;
+    line-height: 1.45;
 }
 
 .composer-separator {
@@ -174,13 +176,11 @@
 }
 
 .program-movements {
-    margin: 12px 0 0;
-    padding: 8px 14px;
-    border-left: 2px solid rgba(196, 154, 84, 0.75);
-    border-radius: 0 7px 7px 0;
-    background: rgba(255, 255, 255, 0.035);
-    color: #cfcfcf;
-    font-size: 14px;
+    margin: 9px 0 0;
+    padding: 2px 0 2px 12px;
+    border-left: 1px solid rgba(196, 154, 84, 0.32);
+    color: #aaa;
+    font-size: 13px;
     line-height: 1.55;
     list-style: none;
     counter-reset: movement;
@@ -190,19 +190,19 @@
     display: grid;
     grid-template-columns: 34px minmax(0, 1fr);
     align-items: baseline;
-    padding: 5px 0;
+    padding: 3px 0;
     text-align: left;
     counter-increment: movement;
 }
 
 .program-movements li + li {
-    border-top: 1px solid rgba(255, 255, 255, 0.055);
+    border-top: 1px solid rgba(255, 255, 255, 0.025);
 }
 
 .program-movements li::before {
-    color: #b99050;
-    font-size: 12px;
-    font-weight: 700;
+    color: #8f7448;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 0.02em;
     content: counter(movement, upper-roman) ".";
 }
@@ -248,7 +248,11 @@
     }
 
     .program-work h4 {
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .program-work h4 > span:not(.composer-separator) {
+        font-size: 17px;
     }
 
     .program-movements {
