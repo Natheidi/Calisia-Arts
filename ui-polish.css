@@ -273,6 +273,14 @@ button:focus-visible,
     margin-left: auto;
 }
 
+.festival-artists-2026 .jury-img {
+    width: min(500px, 100%) !important;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
 .line {
     max-width: 100%;
 }
