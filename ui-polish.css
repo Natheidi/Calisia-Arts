@@ -273,6 +273,47 @@ button:focus-visible,
     margin-left: auto;
 }
 
+.filip-team-photo-frame {
+    width: min(500px, 80%);
+    aspect-ratio: 1;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.filip-team-photo-frame .filip-team-photo {
+    width: 100% !important;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center 20%;
+    transform: scale(1.1);
+    transform-origin: center 18%;
+}
+
+.filip-team-photo-frame--round {
+    width: 220px;
+    height: 220px;
+    flex: 0 0 220px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border: 4px solid #a48044;
+    border-radius: 50%;
+}
+
+.filip-team-photo-frame--round .filip-team-photo {
+    border: 0;
+    border-radius: 0;
+}
+
+@media (max-width: 1250px) {
+    .filip-team-photo-frame--round {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 .festival-artists-2026 .jury-img {
     width: min(500px, 100%) !important;
     aspect-ratio: 4 / 5;
