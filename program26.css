@@ -69,6 +69,29 @@
     opacity: 0.9;
 }
 
+.program-date-time {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    gap: 7px;
+    margin-top: 18px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.14);
+    font-family: "Oswald", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 1;
+}
+
+.program-date-time > span {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
 .program-details {
     padding: 28px 32px 30px;
 }
@@ -232,6 +255,12 @@
 
     .program-date-day {
         font-size: 36px;
+    }
+
+    .program-date-time {
+        margin-top: 13px;
+        padding: 7px 13px;
+        font-size: 18px;
     }
 
     .program-details {
