@@ -142,7 +142,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const ticketNote = Array.from(document.querySelectorAll('p, div, span'))
+            let ticketNote = Array.from(document.querySelectorAll('p, div, span'))
                 .filter(function (element) {
                     return /free (admission )?tickets?|complimentary tickets?|admission.*free/i.test(element.textContent);
                 })
@@ -150,13 +150,35 @@
                     return a.textContent.trim().length - b.textContent.trim().length;
                 })[0];
 
-            if (ticketNote) {
-                ticketNote.textContent = 'Free tickets for the festival concerts are available from the administrative office of the Music School Complex in Kalisz.';
-                ticketNote.hidden = false;
-                ticketNote.style.setProperty('display', 'block', 'important');
-                ticketNote.style.setProperty('visibility', 'visible', 'important');
-                ticketNote.style.setProperty('opacity', '1', 'important');
+            if (!ticketNote) {
+                ticketNote = document.createElement('p');
+                ticketNote.className = 'festival-ticket-note';
+                const dateElement = Array.from(document.querySelectorAll('p, div, span'))
+                    .filter(function (element) {
+                        return /25\s*[.\/-]\s*10/.test(element.textContent) && /13\s*[.\/-]\s*11/.test(element.textContent);
+                    })
+                    .sort(function (a, b) {
+                        return a.textContent.trim().length - b.textContent.trim().length;
+                    })[0];
+
+                if (dateElement) {
+                    dateElement.insertAdjacentElement('afterend', ticketNote);
+                }
             }
+
+            if (!ticketNote.isConnected) return;
+            ticketNote.textContent = 'Free tickets for the festival concerts are available from the administrative office of the Music School Complex in Kalisz.';
+            ticketNote.hidden = false;
+            ticketNote.style.setProperty('display', 'block', 'important');
+            ticketNote.style.setProperty('visibility', 'visible', 'important');
+            ticketNote.style.setProperty('opacity', '1', 'important');
+            ticketNote.style.setProperty('max-width', '620px');
+            ticketNote.style.setProperty('margin', '16px auto 0');
+            ticketNote.style.setProperty('padding', '0 18px');
+            ticketNote.style.setProperty('color', '#f3f3f3');
+            ticketNote.style.setProperty('font-size', 'clamp(14px, 1.3vw, 17px)');
+            ticketNote.style.setProperty('line-height', '1.55');
+            ticketNote.style.setProperty('text-align', 'center');
         });
     </script>
 </body>
