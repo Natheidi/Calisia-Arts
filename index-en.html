@@ -258,6 +258,47 @@
             } else {
                 tabletLayout.addListener(positionTicketNote);
             }
+
+            const keepTicketInsideCircle = function () {
+                dateElement.insertAdjacentElement('afterend', ticketNote);
+                festivalMark.style.setProperty('position', 'relative');
+                festivalMark.style.setProperty('min-width', '0', 'important');
+                festivalMark.style.setProperty('min-height', '0', 'important');
+                festivalMark.style.setProperty('aspect-ratio', '1 / 1', 'important');
+
+                if (window.innerWidth <= 768) {
+                    festivalMark.style.setProperty('width', 'min(92vw, 560px)', 'important');
+                    festivalMark.style.setProperty('height', 'min(92vw, 560px)', 'important');
+                    ticketNote.style.setProperty('font-size', 'clamp(10.5px, 2.7vw, 13px)');
+                } else if (window.innerWidth < 1600) {
+                    festivalMark.style.setProperty('width', 'clamp(460px, 46vw, 580px)', 'important');
+                    festivalMark.style.setProperty('height', 'clamp(460px, 46vw, 580px)', 'important');
+                    ticketNote.style.setProperty('font-size', 'clamp(12px, 1.15vw, 14px)');
+                } else {
+                    festivalMark.style.setProperty('width', 'clamp(620px, 42vw, 720px)', 'important');
+                    festivalMark.style.setProperty('height', 'clamp(620px, 42vw, 720px)', 'important');
+                    ticketNote.style.setProperty('font-size', '15px');
+                }
+
+                ticketNote.style.setProperty('position', 'absolute');
+                ticketNote.style.setProperty('z-index', '3');
+                ticketNote.style.setProperty('left', '50%');
+                ticketNote.style.setProperty('bottom', '4%');
+                ticketNote.style.setProperty('transform', 'translateX(-50%)');
+                ticketNote.style.setProperty('width', '88%');
+                ticketNote.style.setProperty('max-width', '560px');
+                ticketNote.style.setProperty('margin', '0');
+                ticketNote.style.setProperty('padding', '0');
+                ticketNote.style.setProperty('background', 'transparent');
+                ticketNote.style.setProperty('border', '0');
+                ticketNote.style.setProperty('border-radius', '0');
+                ticketNote.style.setProperty('box-shadow', 'none');
+                ticketNote.style.setProperty('text-shadow', '0 1px 3px rgba(0, 0, 0, 0.8)');
+                ticketNote.style.setProperty('line-height', '1.35');
+            };
+
+            keepTicketInsideCircle();
+            window.addEventListener('resize', keepTicketInsideCircle, { passive: true });
         });
     </script>
 </body>
