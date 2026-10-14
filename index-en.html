@@ -150,20 +150,32 @@
                     return a.textContent.trim().length - b.textContent.trim().length;
                 })[0];
 
+            const dateElement = Array.from(document.querySelectorAll('p, div, span'))
+                .filter(function (element) {
+                    return /25\s*[.\/-]\s*10/.test(element.textContent) && /13\s*[.\/-]\s*11/.test(element.textContent);
+                })
+                .sort(function (a, b) {
+                    return a.textContent.trim().length - b.textContent.trim().length;
+                })[0];
+
             if (!ticketNote) {
                 ticketNote = document.createElement('p');
                 ticketNote.className = 'festival-ticket-note';
-                const dateElement = Array.from(document.querySelectorAll('p, div, span'))
-                    .filter(function (element) {
-                        return /25\s*[.\/-]\s*10/.test(element.textContent) && /13\s*[.\/-]\s*11/.test(element.textContent);
-                    })
-                    .sort(function (a, b) {
-                        return a.textContent.trim().length - b.textContent.trim().length;
-                    })[0];
+            }
 
-                if (dateElement) {
-                    dateElement.insertAdjacentElement('afterend', ticketNote);
+            let festivalMark = dateElement;
+            while (festivalMark && festivalMark.parentElement && festivalMark.parentElement !== document.body) {
+                const parent = festivalMark.parentElement;
+                const parentStyle = window.getComputedStyle(parent);
+                if (/50%/.test(parentStyle.borderRadius) || /circle|festival-(?:mark|badge|emblem|overlay)/i.test(parent.className)) {
+                    festivalMark = parent;
+                    break;
                 }
+                festivalMark = parent;
+            }
+
+            if (festivalMark && festivalMark !== document.body) {
+                festivalMark.insertAdjacentElement('afterend', ticketNote);
             }
 
             if (!ticketNote.isConnected) return;
@@ -173,7 +185,7 @@
             ticketNote.style.setProperty('visibility', 'visible', 'important');
             ticketNote.style.setProperty('opacity', '1', 'important');
             ticketNote.style.setProperty('max-width', '620px');
-            ticketNote.style.setProperty('margin', '16px auto 0');
+            ticketNote.style.setProperty('margin', '18px auto 0');
             ticketNote.style.setProperty('padding', '0 18px');
             ticketNote.style.setProperty('color', '#f3f3f3');
             ticketNote.style.setProperty('font-size', 'clamp(14px, 1.3vw, 17px)');
