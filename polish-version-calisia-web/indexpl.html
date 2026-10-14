@@ -20,7 +20,7 @@
 <!-- Main Stylesheet CSS -->
     <link rel="stylesheet" href="style.css?id=10">
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-    <link rel="stylesheet" href="../ui-polish.css?id=23">
+    <link rel="stylesheet" href="../ui-polish.css?id=25">
 </head>
 
 <body class="homepage-2026">
@@ -99,6 +99,7 @@
                         </h1>
                         <p class="home-festival-date">25.10–13.11.2026</p>
                     </div>
+                    <p class="home-festival-ticket">Bezpłatne wejściówki na koncerty festiwalowe dostępne są w sekretariacie Zespołu Szkół Muzycznych w Kaliszu.</p>
                 </div>
 
                 <!--
@@ -139,167 +140,6 @@
         </div>
     </section>
     <script defer src="js/about.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let ticketNote = Array.from(document.querySelectorAll('p, div, span'))
-                .filter(function (element) {
-                    return /bezpłatn|wejściów|bilet/i.test(element.textContent);
-                })
-                .sort(function (a, b) {
-                    return a.textContent.trim().length - b.textContent.trim().length;
-                })[0];
-
-            const dateElement = Array.from(document.querySelectorAll('p, div, span'))
-                .filter(function (element) {
-                    return /25\s*[.\/-]\s*10/.test(element.textContent) && /13\s*[.\/-]\s*11/.test(element.textContent);
-                })
-                .sort(function (a, b) {
-                    return a.textContent.trim().length - b.textContent.trim().length;
-                })[0];
-
-            if (!ticketNote) {
-                ticketNote = document.createElement('p');
-                ticketNote.className = 'festival-ticket-note';
-            }
-
-            let festivalMark = dateElement;
-            while (festivalMark && festivalMark.parentElement && festivalMark.parentElement !== document.body) {
-                const parent = festivalMark.parentElement;
-                const parentStyle = window.getComputedStyle(parent);
-                if (/50%/.test(parentStyle.borderRadius) || /circle|festival-(?:mark|badge|emblem|overlay)/i.test(parent.className)) {
-                    festivalMark = parent;
-                    break;
-                }
-                festivalMark = parent;
-            }
-
-            if (festivalMark && festivalMark !== document.body) {
-                festivalMark.insertAdjacentElement('afterend', ticketNote);
-            }
-
-            if (!ticketNote.isConnected) return;
-            ticketNote.textContent = 'Bezpłatne wejściówki na koncerty festiwalowe dostępne są w sekretariacie Zespołu Szkół Muzycznych w Kaliszu.';
-            ticketNote.hidden = false;
-            ticketNote.style.setProperty('display', 'block', 'important');
-            ticketNote.style.setProperty('visibility', 'visible', 'important');
-            ticketNote.style.setProperty('opacity', '1', 'important');
-            ticketNote.style.setProperty('max-width', '620px');
-            ticketNote.style.setProperty('box-sizing', 'border-box');
-            ticketNote.style.setProperty('margin', '18px auto 0');
-            ticketNote.style.setProperty('padding', '12px 20px');
-            ticketNote.style.setProperty('color', '#ffffff');
-            ticketNote.style.setProperty('font-size', 'clamp(14px, 1.3vw, 17px)');
-            ticketNote.style.setProperty('line-height', '1.55');
-            ticketNote.style.setProperty('text-align', 'center');
-            ticketNote.style.setProperty('text-shadow', 'none');
-            ticketNote.style.setProperty('background', 'rgba(0, 0, 0, 0.72)');
-            ticketNote.style.setProperty('border', '1px solid rgba(184, 141, 62, 0.42)');
-            ticketNote.style.setProperty('border-radius', '6px');
-            ticketNote.style.setProperty('box-shadow', '0 6px 18px rgba(0, 0, 0, 0.22)');
-            ticketNote.style.setProperty('backdrop-filter', 'blur(4px)');
-            ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
-
-            const compactLayout = window.matchMedia('(max-width: 1599px)');
-            const tabletLayout = window.matchMedia('(min-width: 769px) and (max-width: 1599px)');
-            const positionTicketNote = function () {
-                if (compactLayout.matches) {
-                    festivalMark.insertAdjacentElement('afterend', ticketNote);
-                    ticketNote.style.setProperty('margin', '16px auto 0');
-                    ticketNote.style.setProperty('padding', '0 22px');
-                    ticketNote.style.setProperty('background', 'transparent');
-                    ticketNote.style.setProperty('border', '0');
-                    ticketNote.style.setProperty('border-radius', '0');
-                    ticketNote.style.setProperty('box-shadow', 'none');
-                    ticketNote.style.setProperty('backdrop-filter', 'none');
-                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
-                    ticketNote.style.setProperty('text-shadow', '0 1px 4px rgba(0, 0, 0, 0.92)');
-
-                    if (tabletLayout.matches) {
-                        festivalMark.style.setProperty('width', 'clamp(480px, 52vw, 620px)', 'important');
-                        festivalMark.style.setProperty('height', 'clamp(480px, 52vw, 620px)', 'important');
-                        festivalMark.style.setProperty('min-width', '0', 'important');
-                        festivalMark.style.setProperty('min-height', '0', 'important');
-                        festivalMark.style.setProperty('aspect-ratio', '1 / 1', 'important');
-                    } else {
-                        festivalMark.style.removeProperty('width');
-                        festivalMark.style.removeProperty('height');
-                        festivalMark.style.removeProperty('min-width');
-                        festivalMark.style.removeProperty('min-height');
-                        festivalMark.style.removeProperty('aspect-ratio');
-                    }
-                } else {
-                    dateElement.insertAdjacentElement('afterend', ticketNote);
-                    ticketNote.style.setProperty('margin', '14px auto 0');
-                    ticketNote.style.setProperty('padding', '0 26px');
-                    ticketNote.style.setProperty('background', 'transparent');
-                    ticketNote.style.setProperty('border', '0');
-                    ticketNote.style.setProperty('border-radius', '0');
-                    ticketNote.style.setProperty('box-shadow', 'none');
-                    ticketNote.style.setProperty('backdrop-filter', 'none');
-                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
-                    ticketNote.style.setProperty('text-shadow', 'none');
-                    festivalMark.style.removeProperty('width');
-                    festivalMark.style.removeProperty('height');
-                    festivalMark.style.removeProperty('min-width');
-                    festivalMark.style.removeProperty('min-height');
-                    festivalMark.style.removeProperty('aspect-ratio');
-                }
-            };
-
-            positionTicketNote();
-            if (compactLayout.addEventListener) {
-                compactLayout.addEventListener('change', positionTicketNote);
-            } else {
-                compactLayout.addListener(positionTicketNote);
-            }
-            if (tabletLayout.addEventListener) {
-                tabletLayout.addEventListener('change', positionTicketNote);
-            } else {
-                tabletLayout.addListener(positionTicketNote);
-            }
-
-            const keepTicketInsideCircle = function () {
-                dateElement.insertAdjacentElement('afterend', ticketNote);
-                festivalMark.style.setProperty('position', 'relative');
-                festivalMark.style.setProperty('min-width', '0', 'important');
-                festivalMark.style.setProperty('min-height', '0', 'important');
-                festivalMark.style.setProperty('aspect-ratio', '1 / 1', 'important');
-
-                if (window.innerWidth <= 768) {
-                    festivalMark.style.setProperty('width', 'min(92vw, 560px)', 'important');
-                    festivalMark.style.setProperty('height', 'min(92vw, 560px)', 'important');
-                    ticketNote.style.setProperty('font-size', 'clamp(10.5px, 2.7vw, 13px)');
-                } else if (window.innerWidth < 1600) {
-                    festivalMark.style.setProperty('width', 'clamp(460px, 46vw, 580px)', 'important');
-                    festivalMark.style.setProperty('height', 'clamp(460px, 46vw, 580px)', 'important');
-                    ticketNote.style.setProperty('font-size', 'clamp(12px, 1.15vw, 14px)');
-                } else {
-                    festivalMark.style.setProperty('width', 'clamp(620px, 42vw, 720px)', 'important');
-                    festivalMark.style.setProperty('height', 'clamp(620px, 42vw, 720px)', 'important');
-                    ticketNote.style.setProperty('font-size', '15px');
-                }
-
-                ticketNote.style.setProperty('position', 'absolute');
-                ticketNote.style.setProperty('z-index', '3');
-                ticketNote.style.setProperty('left', '50%');
-                ticketNote.style.setProperty('bottom', '4%');
-                ticketNote.style.setProperty('transform', 'translateX(-50%)');
-                ticketNote.style.setProperty('width', '88%');
-                ticketNote.style.setProperty('max-width', '560px');
-                ticketNote.style.setProperty('margin', '0');
-                ticketNote.style.setProperty('padding', '0');
-                ticketNote.style.setProperty('background', 'transparent');
-                ticketNote.style.setProperty('border', '0');
-                ticketNote.style.setProperty('border-radius', '0');
-                ticketNote.style.setProperty('box-shadow', 'none');
-                ticketNote.style.setProperty('text-shadow', '0 1px 3px rgba(0, 0, 0, 0.8)');
-                ticketNote.style.setProperty('line-height', '1.35');
-            };
-
-            keepTicketInsideCircle();
-            window.addEventListener('resize', keepTicketInsideCircle, { passive: true });
-        });
-    </script>
 </body>
 
 </html>
