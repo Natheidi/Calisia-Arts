@@ -200,18 +200,19 @@
             ticketNote.style.setProperty('backdrop-filter', 'blur(4px)');
             ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
 
-            const mobileLayout = window.matchMedia('(max-width: 768px)');
+            const compactLayout = window.matchMedia('(max-width: 1599px)');
             const positionTicketNote = function () {
-                if (mobileLayout.matches) {
+                if (compactLayout.matches) {
                     festivalMark.insertAdjacentElement('afterend', ticketNote);
-                    ticketNote.style.setProperty('margin', '18px auto 0');
-                    ticketNote.style.setProperty('padding', '12px 20px');
-                    ticketNote.style.setProperty('background', 'rgba(0, 0, 0, 0.72)');
-                    ticketNote.style.setProperty('border', '1px solid rgba(184, 141, 62, 0.42)');
-                    ticketNote.style.setProperty('border-radius', '6px');
-                    ticketNote.style.setProperty('box-shadow', '0 6px 18px rgba(0, 0, 0, 0.22)');
-                    ticketNote.style.setProperty('backdrop-filter', 'blur(4px)');
-                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
+                    ticketNote.style.setProperty('margin', '16px auto 0');
+                    ticketNote.style.setProperty('padding', '0 22px');
+                    ticketNote.style.setProperty('background', 'transparent');
+                    ticketNote.style.setProperty('border', '0');
+                    ticketNote.style.setProperty('border-radius', '0');
+                    ticketNote.style.setProperty('box-shadow', 'none');
+                    ticketNote.style.setProperty('backdrop-filter', 'none');
+                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
+                    ticketNote.style.setProperty('text-shadow', '0 1px 4px rgba(0, 0, 0, 0.92)');
                 } else {
                     dateElement.insertAdjacentElement('afterend', ticketNote);
                     ticketNote.style.setProperty('margin', '14px auto 0');
@@ -222,14 +223,15 @@
                     ticketNote.style.setProperty('box-shadow', 'none');
                     ticketNote.style.setProperty('backdrop-filter', 'none');
                     ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
+                    ticketNote.style.setProperty('text-shadow', 'none');
                 }
             };
 
             positionTicketNote();
-            if (mobileLayout.addEventListener) {
-                mobileLayout.addEventListener('change', positionTicketNote);
+            if (compactLayout.addEventListener) {
+                compactLayout.addEventListener('change', positionTicketNote);
             } else {
-                mobileLayout.addListener(positionTicketNote);
+                compactLayout.addListener(positionTicketNote);
             }
         });
     </script>
