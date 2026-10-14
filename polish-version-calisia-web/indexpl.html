@@ -200,6 +200,7 @@
             ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
 
             const compactLayout = window.matchMedia('(max-width: 1599px)');
+            const tabletLayout = window.matchMedia('(min-width: 769px) and (max-width: 1599px)');
             const positionTicketNote = function () {
                 if (compactLayout.matches) {
                     festivalMark.insertAdjacentElement('afterend', ticketNote);
@@ -212,6 +213,20 @@
                     ticketNote.style.setProperty('backdrop-filter', 'none');
                     ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
                     ticketNote.style.setProperty('text-shadow', '0 1px 4px rgba(0, 0, 0, 0.92)');
+
+                    if (tabletLayout.matches) {
+                        festivalMark.style.setProperty('width', 'clamp(480px, 52vw, 620px)', 'important');
+                        festivalMark.style.setProperty('height', 'clamp(480px, 52vw, 620px)', 'important');
+                        festivalMark.style.setProperty('min-width', '0', 'important');
+                        festivalMark.style.setProperty('min-height', '0', 'important');
+                        festivalMark.style.setProperty('aspect-ratio', '1 / 1', 'important');
+                    } else {
+                        festivalMark.style.removeProperty('width');
+                        festivalMark.style.removeProperty('height');
+                        festivalMark.style.removeProperty('min-width');
+                        festivalMark.style.removeProperty('min-height');
+                        festivalMark.style.removeProperty('aspect-ratio');
+                    }
                 } else {
                     dateElement.insertAdjacentElement('afterend', ticketNote);
                     ticketNote.style.setProperty('margin', '14px auto 0');
@@ -223,6 +238,11 @@
                     ticketNote.style.setProperty('backdrop-filter', 'none');
                     ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
                     ticketNote.style.setProperty('text-shadow', 'none');
+                    festivalMark.style.removeProperty('width');
+                    festivalMark.style.removeProperty('height');
+                    festivalMark.style.removeProperty('min-width');
+                    festivalMark.style.removeProperty('min-height');
+                    festivalMark.style.removeProperty('aspect-ratio');
                 }
             };
 
@@ -231,6 +251,11 @@
                 compactLayout.addEventListener('change', positionTicketNote);
             } else {
                 compactLayout.addListener(positionTicketNote);
+            }
+            if (tabletLayout.addEventListener) {
+                tabletLayout.addEventListener('change', positionTicketNote);
+            } else {
+                tabletLayout.addListener(positionTicketNote);
             }
         });
     </script>
