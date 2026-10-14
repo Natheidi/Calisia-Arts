@@ -139,6 +139,25 @@
         </div>
     </section>
     <script defer src="js/about.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ticketNote = Array.from(document.querySelectorAll('p, div, span'))
+                .filter(function (element) {
+                    return /bezpłatn|wejściów|bilet/i.test(element.textContent);
+                })
+                .sort(function (a, b) {
+                    return a.textContent.trim().length - b.textContent.trim().length;
+                })[0];
+
+            if (ticketNote) {
+                ticketNote.textContent = 'Bezpłatne wejściówki na koncerty festiwalowe dostępne są w sekretariacie Zespołu Szkół Muzycznych w Kaliszu.';
+                ticketNote.hidden = false;
+                ticketNote.style.setProperty('display', 'block', 'important');
+                ticketNote.style.setProperty('visibility', 'visible', 'important');
+                ticketNote.style.setProperty('opacity', '1', 'important');
+            }
+        });
+    </script>
 </body>
 
 </html>

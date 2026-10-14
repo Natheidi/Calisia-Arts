@@ -140,6 +140,25 @@
     <script defer src="js/about.js"></script>
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ticketNote = Array.from(document.querySelectorAll('p, div, span'))
+                .filter(function (element) {
+                    return /free (admission )?tickets?|complimentary tickets?|admission.*free/i.test(element.textContent);
+                })
+                .sort(function (a, b) {
+                    return a.textContent.trim().length - b.textContent.trim().length;
+                })[0];
+
+            if (ticketNote) {
+                ticketNote.textContent = 'Free tickets for the festival concerts are available from the administrative office of the Music School Complex in Kalisz.';
+                ticketNote.hidden = false;
+                ticketNote.style.setProperty('display', 'block', 'important');
+                ticketNote.style.setProperty('visibility', 'visible', 'important');
+                ticketNote.style.setProperty('opacity', '1', 'important');
+            }
+        });
+    </script>
 </body>
 
 </html>
