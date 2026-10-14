@@ -185,13 +185,52 @@
             ticketNote.style.setProperty('visibility', 'visible', 'important');
             ticketNote.style.setProperty('opacity', '1', 'important');
             ticketNote.style.setProperty('max-width', '620px');
+            ticketNote.style.setProperty('box-sizing', 'border-box');
             ticketNote.style.setProperty('margin', '18px auto 0');
-            ticketNote.style.setProperty('padding', '0 18px');
+            ticketNote.style.setProperty('padding', '12px 20px');
             ticketNote.style.setProperty('color', '#ffffff');
             ticketNote.style.setProperty('font-size', 'clamp(14px, 1.3vw, 17px)');
             ticketNote.style.setProperty('line-height', '1.55');
             ticketNote.style.setProperty('text-align', 'center');
-            ticketNote.style.setProperty('text-shadow', '0 2px 5px #000, 0 4px 12px rgba(0, 0, 0, 0.95)');
+            ticketNote.style.setProperty('text-shadow', 'none');
+            ticketNote.style.setProperty('background', 'rgba(0, 0, 0, 0.72)');
+            ticketNote.style.setProperty('border', '1px solid rgba(184, 141, 62, 0.42)');
+            ticketNote.style.setProperty('border-radius', '6px');
+            ticketNote.style.setProperty('box-shadow', '0 6px 18px rgba(0, 0, 0, 0.22)');
+            ticketNote.style.setProperty('backdrop-filter', 'blur(4px)');
+            ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
+
+            const mobileLayout = window.matchMedia('(max-width: 768px)');
+            const positionTicketNote = function () {
+                if (mobileLayout.matches) {
+                    festivalMark.insertAdjacentElement('afterend', ticketNote);
+                    ticketNote.style.setProperty('margin', '18px auto 0');
+                    ticketNote.style.setProperty('padding', '12px 20px');
+                    ticketNote.style.setProperty('background', 'rgba(0, 0, 0, 0.72)');
+                    ticketNote.style.setProperty('border', '1px solid rgba(184, 141, 62, 0.42)');
+                    ticketNote.style.setProperty('border-radius', '6px');
+                    ticketNote.style.setProperty('box-shadow', '0 6px 18px rgba(0, 0, 0, 0.22)');
+                    ticketNote.style.setProperty('backdrop-filter', 'blur(4px)');
+                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'blur(4px)');
+                } else {
+                    dateElement.insertAdjacentElement('afterend', ticketNote);
+                    ticketNote.style.setProperty('margin', '14px auto 0');
+                    ticketNote.style.setProperty('padding', '0 26px');
+                    ticketNote.style.setProperty('background', 'transparent');
+                    ticketNote.style.setProperty('border', '0');
+                    ticketNote.style.setProperty('border-radius', '0');
+                    ticketNote.style.setProperty('box-shadow', 'none');
+                    ticketNote.style.setProperty('backdrop-filter', 'none');
+                    ticketNote.style.setProperty('-webkit-backdrop-filter', 'none');
+                }
+            };
+
+            positionTicketNote();
+            if (mobileLayout.addEventListener) {
+                mobileLayout.addEventListener('change', positionTicketNote);
+            } else {
+                mobileLayout.addListener(positionTicketNote);
+            }
         });
     </script>
 </body>
